@@ -1,3 +1,6 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Kode+Mono:wght@400..700&display=swap');
+
 body{
     /*Background image styling*/
     background: black url("../images/background.jpg") no-repeat fixed right top;
@@ -24,10 +27,12 @@ nav>ul{
     padding: 0%;
 }
 
+/*Anchor tag decoration*/
 a{
     text-decoration: none;
     color:#1DF500;
 }
+
 main{
     /*Make main element take any surplus space to push footer down*/
     flex: 1 0 auto;
