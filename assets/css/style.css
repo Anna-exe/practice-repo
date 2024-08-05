@@ -7,9 +7,11 @@ body{
     background-size: cover;
     /*General body styles*/
     color:#1DF500;
+    text-shadow: 0 0 2px white;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    font-family: 'Kode Mono', monospace;
 }
 
 /*Body child elements*/
@@ -19,7 +21,31 @@ body>*{
     margin: 10px;
 }
 
+
+/*Headings*/
+h1, h2, h3{
+    font-weight: bolder;
+}
+
+
+/*Header*/
+header{
+    text-align: center;
+    color: aliceblue;
+}
+
+header>h1{
+    text-shadow:#1DF500 1px 0 7px;
+}
+
+hr{
+    border: 1px solid #1DF500;
+    box-shadow: #1DF500 0 0 10px;
+}
 /*Nav bar*/
+nav{
+
+}
 nav>ul{
     list-style-type: none;
     display: flex;
