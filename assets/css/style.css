@@ -36,6 +36,7 @@ header{
     text-align: center;
     text-shadow:#1DF500 1px 0 7px;
     padding-bottom: 10px;
+    background: url(../images/hero-img.png) no-repeat center center / cover;;
 }
 
 hr{
