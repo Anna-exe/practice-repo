@@ -13,13 +13,30 @@ body{
     font-family: 'Kode Mono', monospace;
 }
 
-/*Body child elements*/
+/*Body's children*/
 body>*{
-    background-color: rgba(0, 0, 0, 0.20);
-    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.60);
     margin: 10px;
 }
 
+/*Logo*/
+#logo{
+    font-size: 300%;
+}
+
+/*Nav bar*/
+nav>ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0%;
+}
+
+/*Anchor tag decoration*/
+a{
+    text-decoration: none;
+    color:#1DF500;
+}
 
 /*Headings*/
 h1, h2, h3{
@@ -27,14 +44,9 @@ h1, h2, h3{
     text-shadow:#1DF500 1px 0 7px;
 }
 
-/*Logo*/
-#logo{
-    font-size: 300%;
-}
 /*Header*/
 header{
     text-align: center;
-    text-shadow:#1DF500 1px 0 7px;
     padding-bottom: 10px;
     background: url(../images/hero-img.png) no-repeat center center / cover;;
 }
@@ -50,7 +62,7 @@ hr{
     text-shadow: 0px 0px 4px white;
 }
 
-/*Nav bar*/
+/*Navigation bar*/
 #navbar{
     list-style-type: none;
     display: flex;
@@ -58,23 +70,17 @@ hr{
     padding: 0%;
 }
 
-/*Anchor tag decoration*/
-a{
-    text-decoration: none;
-    color:#1DF500;
-}
-
 /*Main content*/
 main{
     /*Make main element take any surplus space to push footer down*/
     flex: 1 0 auto;
-    padding:30px;
+    padding: 20px;
 }
 
 /*Footer*/
+
 footer{
-    text-align: center;
-    padding: 30px;
+    text-align:center;
 }
 
 #social{
@@ -83,13 +89,14 @@ footer{
     justify-content: space-evenly;
     padding: 0%;
 }
+
 /*Large devices (laptops and desktops, 992px and up)*/
 @media screen and (min-width: 992px) {
-li{
-    text-decoration: underline 0.15em rgba(0, 0, 0, 0);
-    transition: text-decoration-color 300ms;
-}
-li:hover{
-    text-decoration-color: #1DF500;
-}
-}
+    li{
+        text-decoration: underline 0.15em rgba(0, 0, 0, 0);
+        transition: text-decoration-color 300ms;
+    }
+    li:hover{
+        text-decoration-color: #1DF500;
+    }
+    }
