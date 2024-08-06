@@ -64,10 +64,17 @@ main{
     /*Make main element take any surplus space to push footer down*/
     flex: 1 0 auto;
     padding:30px;
-
 }
 
 /*Footer*/
 footer{
     padding: 30px;
+}
+
+/*Media queries*/
+
+@media screen and (min-width: 992px) {
+    ul a:hover{
+        border-bottom: 1px solid #1DF500;
+    }
 }
