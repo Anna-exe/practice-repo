@@ -58,27 +58,20 @@ header{
     text-align: center;
     padding-bottom: 10px;
     background: url(../images/hero-img.webp) no-repeat center center / cover;
-    padding-top: 70px;
+    padding: 70px 0 30px;
 }
 
 hr{
     border: 1px solid #1DF500;
     box-shadow: #1DF500 0 0 10px;
-    margin-top: 350px;
+    margin: 350px 0 20px;
 }
 
 /*Slogan styling in header*/
 #slogan {
     letter-spacing: 10px;
     text-shadow: 0px 0px 4px white;
-}
-
-/*Navigation bar*/
-#navbar{
-    list-style-type: none;
-    display: flex;
-    justify-content: space-around;
-    padding: 0%;
+    font-size: 150%;
 }
 
 /*Main content*/
