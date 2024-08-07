@@ -103,6 +103,20 @@ footer{
     margin-block: 0.5em;
 }
 
+/*Tablets 768px and up*/
+@media screen and (min-width: 768px) {
+    #product-img {
+        display: flex;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center; 
+        gap: 20px;
+    }
+}
+
+
+
 /*Large devices (laptops and desktops, 992px and up)*/
 @media screen and (min-width: 992px) {
     li{
@@ -115,7 +129,7 @@ footer{
     }
 
     
-    @media screen and (min-width: 1440px) {
+@media screen and (min-width: 1440px) {
         header {
             height: 600px;
         }
