@@ -81,6 +81,12 @@ main{
     padding: 20px;
 }
 
+#product-img{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /*Footer*/
 
 footer{
