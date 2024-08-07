@@ -21,9 +21,9 @@ body>*{
     box-shadow: 0 0 5px black;
 }
 
-/*Logo*/
-#logo{
-    font-size: 300%;
+/*Hero image*/
+#hero{
+    font-size: 280%;
 }
 
 /*Nav bar*/
@@ -56,9 +56,9 @@ h1, h2, h3{
 header{
     height:500px;
     text-align: center;
-    padding-bottom: 10px;
-    background: url(../images/hero-img.webp) no-repeat center center / cover;
-    padding: 70px 0 30px;
+    background: url(../images/hero-img.png) no-repeat center center / cover;
+    padding: 70px 0 40px;
+    box-shadow:none;
 }
 
 hr{
@@ -71,7 +71,7 @@ hr{
 #slogan {
     letter-spacing: 10px;
     text-shadow: 0px 0px 4px white;
-    font-size: 150%;
+    font-size: 140%;
 }
 
 /*Main content*/
