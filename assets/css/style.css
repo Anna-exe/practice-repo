@@ -3,7 +3,7 @@
 
 body{
     /*Background image styling*/
-    background: black url("../images/wallpaperflare.com_wallpaper.jpg") no-repeat fixed right top;
+    background: black url("../images/background.jpg") no-repeat fixed right top;
     background-size: cover;
     /*General body styles*/
     margin: 0;
@@ -17,8 +17,8 @@ body{
 /*Body's children*/
 body>*{
     background-color: rgba(0, 0, 0, 0.60);
-    margin: 5px 0;
-    box-shadow: 0 0 1px black;
+    margin-bottom: 15px;
+    box-shadow: 0 0 5px black;
 }
 
 /*Logo*/
@@ -49,12 +49,14 @@ h1, h2, h3{
 
 /*Header*/
 header{
+    height: 500px;
     text-align: center;
     padding-bottom: 10px;
-    background: url(../images/hero-img.png) no-repeat center center / cover;;
+    background: url(../images/hero-img.webp) no-repeat center center / cover;
 }
 
 hr{
+    margin-top: 350px;
     border: 1px solid #1DF500;
     box-shadow: #1DF500 0 0 10px;
 }
@@ -103,4 +105,13 @@ footer{
     li:hover{
         text-decoration-color: #1DF500;
     }
+    }
+
+    @media screen and (min-width: 1440px) {
+        header {
+            height: 600px;
+        }
+        header hr{
+            margin-top: 450px;
+        }
     }
