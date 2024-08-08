@@ -12,6 +12,7 @@ body{
     flex-direction: column;
     min-height: 100vh;
     font-family: 'Kode Mono', monospace;
+    text-align: center;
 }
 
 /*Body's children*/
@@ -54,13 +55,11 @@ a{
 h1, h2, h3{
     color: white;
     text-shadow:#1DF500 1px 0 7px;
-    text-align: center;
 }
 
 /*Header*/
 header{
     height:500px;
-    text-align: center;
     background: url(../images/hero-img.png) no-repeat center center / cover;
     padding: 70px 0 40px;
     box-shadow:none;
@@ -84,7 +83,6 @@ main{
     /*Make main element take any surplus space to push footer down*/
     flex: 1 0 auto;
     padding: 20px;
-    text-align: center;
 }
 
 #product-img{
@@ -96,7 +94,7 @@ main{
 /*Footer*/
 
 footer{
-    text-align:center;
+
 }
 
 #social{
