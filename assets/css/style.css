@@ -98,7 +98,14 @@ fieldset{
     border:#0f8000 1px solid;
 }
 
-/*Footer*/
+.text-input{
+    background-color: #ffffff24;
+    color: white;
+}
+
+input[type="checkbox" i] {
+    accent-color: rgb(0, 255, 247);
+}
 #social{
     list-style-type: none;
     display: flex;
