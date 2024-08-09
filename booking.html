@@ -45,38 +45,44 @@
     <!--Main content-->
     <main>
         <section id="booking">
-            <form id="booking-form" method="POST" action="https://formdump.codeinstitute.net/">
-                <fieldset>
-                    <legend><h2>Book your appointment</h2></legend>
-                    <label for="first-name">First Name</label>
-                    <input type="text" name="first_name" id="first-name" class="text-input" required>
-                    <br>
-                    <label for="last-name">Last Name</label>
-                    <input type="text" name="last_name" id="last-name" class="text-input" required>
-                    <br>
-                    <label for="email-address">Email Address</label>
-                    <input type="email" name="email_address" id="email-address" class="text-input" required>
-                    <br>
-                    <label for="date">Preferred Date</label>
-                    <input type="date" name="date" id="date" class="date" required>
-                    <br>  
-                    <br>
+            <form method="POST" action="https://formdump.codeinstitute.net/">
+                <div id="appointment-form">
                     <fieldset>
-                        <legend><h3>Choose Your Augmentation</h3></legend>
-                        <input type="checkbox" id="legs" name="augmentations" value="Legs">
-                        <label for="legs">Leg prosthesis</label><br>
-                        <input type="checkbox" id="arms" name="augmentations" value="Arms">
-                        <label for="vehicle2">Arm prosthesis</label><br>
-                        <input type="checkbox" id="torso" name="augmentations" value="Torso">
-                        <label for="torso">Torso augmentations</label>
-                        <input type="checkbox" id="neural" name="augmentations" value="Neural">
-                        <label for="neural">Neural implants</label>
-                        <input type="checkbox" id="optic" name="augmentations" value="Optic">
-                        <label for="optic">Optical implants</label>
+                        <legend><h2>Book your appointment</h2></legend>
+                        <label for="first-name">First Name</label>
+                        <input type="text" name="first_name" id="first-name" class="text-input" required>
+                        <br>
+                        <label for="last-name">Last Name</label>
+                        <input type="text" name="last_name" id="last-name" class="text-input" required>
+                        <br>
+                        <label for="email-address">Email Address</label>
+                        <input type="email" name="email_address" id="email-address" class="text-input" required>
+                        <br>
+                        <label for="date">Preferred Date</label>
+                        <input type="date" name="date" id="date" class="date" required>
+                        <br>  
+                        <br>
+                        <div id="augmentations">
+                            <fieldset>
+                                <legend><h3>Choose Your Augmentation</h3></legend>
+                                <input type="checkbox" id="legs" name="augmentations" value="Legs">
+                                <label for="legs">Leg prosthesis</label><br>
+                                <input type="checkbox" id="arms" name="augmentations" value="Arms">
+                                <label for="vehicle2">Arm prosthesis</label><br>
+                                <input type="checkbox" id="torso" name="augmentations" value="Torso">
+                                <label for="torso">Torso augmentations</label>
+                                <input type="checkbox" id="neural" name="augmentations" value="Neural">
+                                <label for="neural">Neural implants</label>
+                                <input type="checkbox" id="optic" name="augmentations" value="Optic">
+                                <label for="optic">Optical implants</label>
+                            </fieldset>
+                        </div>
+                        <input type="submit" class="submit-button">
+                        <input type="reset" class="reset-button">
                     </fieldset>
-                    <input type="submit" class="submit-button">
-                    <input type="reset" class="reset-button">
-                </fieldset>
+                </div>
+
+                
         </section>
     </main>
 

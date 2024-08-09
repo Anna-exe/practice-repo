@@ -91,6 +91,18 @@ main{
     align-items: center;
 }
 
+/*Booking form*/
+#booking{
+
+}
+fieldset{
+    padding-bottom: 30px;
+    margin-bottom: 20px;
+}
+
+
+
+/*Footer*/
 #social{
     list-style-type: none;
     display: flex;
