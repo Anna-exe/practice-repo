@@ -56,6 +56,7 @@ nav {
     font-size: 110%;
     letter-spacing: 4px;
     list-style-type: none;
+    margin-top: 20px;
 }
 
 #menu > li {
@@ -72,6 +73,12 @@ a{
     background-color: rgba(0, 0, 0, 0.40);
     box-shadow: 0 0 5px black;
     padding: 25px;
+    margin-bottom: 20px;
+}
+.darker-section-styling{
+    background-color: rgba(0, 0, 0, 0.70);
+    box-shadow: 0 0 5px black;
+    padding: 10px;
     margin-bottom: 20px;
 }
 
