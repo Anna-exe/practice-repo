@@ -24,40 +24,47 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <!--Navigation bar-->
-    <nav>
-        <ul id="navbar">
-            <a id="home" href="index.html" title="Home" aria-label="Home"><img src="./assets/favicon/favicon-32x32.png" alt="favicon"></a>
-            <li><a href="index.html" class="active">About</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="booking.html">Booking</a></li>
-        </ul>
-    </nav>
 
     <!--Header-->
     <header>
-        <h1 id="hero">CybernetiX</h1></a>
-        <hr>
-        <em id="slogan">Discover your new self</em>
-    </header>
+        <a  href="index.html">
+            <img id="logo" src="./assets/favicon/favicon-32x32.png" alt="favicon">
+        </a>
 
+        <input type="checkbox" id="nav-toggle" name="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label"><i class="fa-solid fa-bars"></i></label>
+
+        <nav>
+            <ul id="navbar">
+                <li><a href="index.html" class="active">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="booking.html">Booking</a></li>
+            </ul>
+        </nav>
+    </header>
+    
     <!--Main content-->
     <main>
-        <h2>Who are we?</h2>
-        <p>Discover CybernetiX, the cutting-edge human augmentation technology that empowers individuals with special needs and excites tech enthusiasts alike.</p>
-        <br>
-        <p>These innovative devices seamlessly blend advanced technology with sleek aesthetics, offering a futuristic look that is as functional as it is stylish. </p>
-        <br>
-        <p>Each prosthesis is meticulously engineered to enhance mobility and dexterity, providing users with unparalleled freedom and confidence in their daily activities. </p>
-        <br>
-        <p>The lightweight materials and ergonomic design ensure comfort during prolonged use, while customizable features allow for a personalized fit that caters to individual needs.
-        </p>
-        <br>
-        <p>Embrace the future of personal empowerment and redefine what it means to be human in an ever-evolving technological landscape.</p>
+        <section id="hero">
+            <em id="slogan">Discover your new self</em>
+        </section>
+        <section class="section-styling">
+            <h2>Who are we?</h2>
+            <p>Discover CybernetiX, the cutting-edge human augmentation technology that empowers individuals with special needs and excites tech enthusiasts alike.</p>
+            <br>
+            <p>These innovative devices seamlessly blend advanced technology with sleek aesthetics, offering a futuristic look that is as functional as it is stylish. </p>
+            <br>
+            <p>Each prosthesis is meticulously engineered to enhance mobility and dexterity, providing users with unparalleled freedom and confidence in their daily activities. </p>
+            <br>
+            <p>The lightweight materials and ergonomic design ensure comfort during prolonged use, while customizable features allow for a personalized fit that caters to individual needs.
+            </p>
+            <br>
+            <p>Embrace the future of personal empowerment and redefine what it means to be human in an ever-evolving technological landscape.</p>
+        </section>
     </main>
 
     <!--Footer-->
-    <footer>
+    <footer class="section-styling">
         <h2>Find Us</h2>
         <ul id="social">
             <li><a href="http://facebook.com" target="_blank" rel="noopener" aria-label="Visit our Facebook page (opens in new tab)"><i class="fa-brands fa-square-facebook"></i></a></li>
