@@ -222,3 +222,10 @@ input[type="checkbox" i] {
         text-decoration-color: #1DF500;
     }
     }
+
+    /*Larger devices (laptops and desktops, 1440px and up)*/
+@media screen and (min-width: 1440px) {
+    #hero {
+        height: 600px;
+    }
+}
