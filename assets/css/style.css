@@ -74,7 +74,7 @@ a{
     background-color: rgba(0, 0, 0, 0.40);
     box-shadow: 0 0 5px black;
     padding: 25px;
-    margin: 0 15px 15px 15px;
+    margin: 100px 15px 15px 15px;
 }
 .darker-section-styling{
     background-color: rgba(0, 0, 0, 0.70);
@@ -143,6 +143,7 @@ main{
 #booking{
     max-width: 550px;
     margin: auto;
+    
 }
 
 fieldset{
@@ -185,6 +186,9 @@ input[type="checkbox" i] {
 
 /*Tablets 768px and up*/
 @media screen and (min-width: 768px) {
+    .darker-section-styling{
+        padding:0;
+    }
     #product-img {
         display: flex;
         flex-direction: row;
