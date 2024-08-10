@@ -27,6 +27,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    top:0;
 }
 
 /* Navbar styles with dropdown toggle */
@@ -105,6 +106,7 @@ hr{
 main{
     /*Make main element take any surplus space to push footer down*/
     flex: 1 0 auto;
+    flex-direction: column;
 }
 
 /*Hero image*/
