@@ -131,8 +131,8 @@ main{
 }
 
 /*Products section*/
-#products{
-    
+#products h2, h3, p{
+    padding:15px;
 }
 #product-img{
     display: flex;
@@ -186,6 +186,9 @@ input[type="checkbox" i] {
 
 /*Tablets 768px and up*/
 @media screen and (min-width: 768px) {
+    .section-styling{
+        margin:30px;
+    }
     .darker-section-styling{
         padding:0;
     }
