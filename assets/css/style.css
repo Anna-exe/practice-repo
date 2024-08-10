@@ -1,6 +1,12 @@
 /* Google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Kode+Mono:wght@400..700&display=swap');
 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body{
     /*Background image styling*/
     background: black url("../images/background.jpg") no-repeat fixed right top;
@@ -8,27 +14,53 @@ body{
     /*General body styles*/
     margin:0;
     color:#1DF500;
-    display: flex;
-    flex-direction: column;
     min-height: 100vh;
     font-family: 'Kode Mono', monospace;
     text-align: center;
 }
 
-/*Nav bar*/
-nav{
+/*Header*/
+header{
     position: fixed;
+    z-index: 99;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.70);
-}
-
-#navbar{
-    list-style-type: none;
     display: flex;
-    justify-content: space-around;
-    padding: 0%;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
+/* Navbar styles with dropdown toggle */
+nav {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    padding: 0 1rem;
+    display: none;
+    top: 100%;
+}
+
+/* Nav toggle */
+#nav-toggle:checked~nav {
+    display: block;
+}
+
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
+}
+
+#menu {
+    font-size: 110%;
+    letter-spacing: 4px;
+    list-style-type: none;
+}
+
+#menu > li {
+    margin-bottom: 1em;
+}
 
 /*Anchor tag decoration*/
 a{
@@ -147,6 +179,26 @@ input[type="checkbox" i] {
         align-items: center; 
         gap: 20px;
     }
+
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+
+    #menu {
+        display: flex;
+    }
+
+    #menu > li {
+        padding-left: 1rem;
+    }
+
+    .nav-toggle-label {
+        display: none;
+    }
 }
 
 /*Large devices (laptops and desktops, 992px and up)*/
@@ -158,14 +210,4 @@ input[type="checkbox" i] {
     li:hover{
         text-decoration-color: #1DF500;
     }
-    }
-
-    
-@media screen and (min-width: 1440px) {
-        header {
-            height: 600px;
-        }
-        header hr{
-            margin-top: 450px;
-        }
     }
