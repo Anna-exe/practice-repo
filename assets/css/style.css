@@ -73,7 +73,7 @@ a{
     background-color: rgba(0, 0, 0, 0.40);
     box-shadow: 0 0 5px black;
     padding: 25px;
-    margin-bottom: 20px;
+    margin: 0 15px 15px 15px;
 }
 .darker-section-styling{
     background-color: rgba(0, 0, 0, 0.70);
@@ -128,6 +128,9 @@ main{
 }
 
 /*Products section*/
+#products{
+    padding-top: 100px;
+}
 #product-img{
     display: flex;
     flex-direction: column;
