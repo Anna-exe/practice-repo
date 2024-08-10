@@ -107,6 +107,7 @@ main{
     /*Make main element take any surplus space to push footer down*/
     flex: 1 0 auto;
     flex-direction: column;
+    margin-top: 100px;
 }
 
 /*Hero image*/
@@ -131,7 +132,7 @@ main{
 
 /*Products section*/
 #products{
-    padding-top: 100px;
+    
 }
 #product-img{
     display: flex;
@@ -143,7 +144,6 @@ main{
 #booking{
     max-width: 550px;
     margin: auto;
-    
 }
 
 fieldset{
