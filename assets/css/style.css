@@ -210,6 +210,10 @@ input[type="checkbox" i] {
     .nav-toggle-label {
         display: none;
     }
+    #logo{
+        padding-left: 30px;
+        font-size: 250%;
+    }
 }
 
 /*Large devices (laptops and desktops, 992px and up)*/
