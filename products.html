@@ -24,48 +24,50 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <!--Navigation bar-->
-    <nav>
-        <ul id="navbar">
-            <a id="home" href="index.html" title="Home" aria-label="Home"><img src="./assets/favicon/favicon-32x32.png" alt="favicon"></a>
-            <li><a href="index.html">About</a></li>
-            <li><a href="products.html" class="active">Products</a></li>
-            <li><a href="booking.html">Booking</a></li>
-        </ul>
-    </nav>
 
     <!--Header-->
-    <header class="hidden">
-        <h1 id="hero">CybernetiX</h1></a>
-        <hr>
-        <em id="slogan">Discover your new self</em>
+    <header class="darker-section-styling">
+        <a  href="index.html">
+            <h1>CybernetiX</h1>
+        </a>
+
+        <input type="checkbox" id="nav-toggle" name="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label"><i class="fa-solid fa-bars"></i></label>
+
+        <nav>
+            <ul id="menu" class="darker-section-styling">
+                <li><a href="index.html">About</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="booking.html">Booking</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!--Main content-->
-    <main>
-        <h2>Products</h2>
-        <p>Discover our offers below and book your appointment <a href="booking.html" class="active">here</a> </p>
-        <div id="product-img">
-            <div id="hand">
-                <h3>Hand prosthesis</h3>
-                <img src="./assets/images/hand.webp" alt="Hand prosthesis"></div>
-            <div id="leg">
-                <h3>Leg prosthesis</h3>
-                <img src="./assets/images/leg.webp" alt="Leg prosthesis"></div>
-            <div id="torso">
-                <h3>Torso augmentations</h3>
-                <img src="./assets/images/torso.webp" alt="Torso augmentations"></div>
-            <div id="neuro">
-                <h3>Neural implants</h3>
-                <img src="./assets/images/neuro.webp" alt="Neural implants"></div>
-            <div id="optic">
-                <h3>Optic implants</h3>
-                <img src="./assets/images/optic.webp" alt="Optic implants"></div>
-         </div>
-    </main>
+        <!--Main content-->
+        <main>
+            <h2>Products</h2>
+            <p>Discover our offers below and book your appointment <a href="booking.html" class="active">here</a> </p>
+            <div id="product-img">
+                <div id="hand">
+                    <h3>Hand prosthesis</h3>
+                    <img src="./assets/images/hand.webp" alt="Hand prosthesis"></div>
+                <div id="leg">
+                    <h3>Leg prosthesis</h3>
+                    <img src="./assets/images/leg.webp" alt="Leg prosthesis"></div>
+                <div id="torso">
+                    <h3>Torso augmentations</h3>
+                    <img src="./assets/images/torso.webp" alt="Torso augmentations"></div>
+                <div id="neuro">
+                    <h3>Neural implants</h3>
+                    <img src="./assets/images/neuro.webp" alt="Neural implants"></div>
+                <div id="optic">
+                    <h3>Optic implants</h3>
+                    <img src="./assets/images/optic.webp" alt="Optic implants"></div>
+             </div>
+        </main>
 
     <!--Footer-->
-    <footer>
+    <footer class="section-styling">
         <h2>Find Us</h2>
         <ul id="social">
             <li><a href="http://facebook.com" target="_blank" rel="noopener" aria-label="Visit our Facebook page (opens in new tab)"><i class="fa-brands fa-square-facebook"></i></a></li>

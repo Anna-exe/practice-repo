@@ -24,64 +24,66 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <!--Navigation bar-->
-    <nav>
-        <ul id="navbar">
-            <a id="home" href="index.html" title="Home" aria-label="Home"><img src="./assets/favicon/favicon-32x32.png" alt="favicon"></a>
-            <li><a href="index.html">About</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="booking.html" class="active">Booking</a></li>
-        </ul>
-    </nav>
 
     <!--Header-->
-    <header class="hidden">
-        <h1 id="hero">CybernetiX</h1></a>
-        <hr>
-        <em id="slogan">Discover your new self</em>
-    </header>
+    <header class="darker-section-styling">
+        <a  href="index.html">
+            <h1>CybernetiX</h1>
+        </a>
 
-    <!--Main content-->
-    <main>
-        <section id="booking">
-            <form method="POST" action="https://formdump.codeinstitute.net/">
+        <input type="checkbox" id="nav-toggle" name="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label"><i class="fa-solid fa-bars"></i></label>
+
+        <nav>
+            <ul id="menu" class="darker-section-styling">
+                <li><a href="index.html">About</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="booking.html" class="active">Booking</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+<!--Main content-->
+<main>
+    <section id="booking">
+        <form method="POST" action="https://formdump.codeinstitute.net/">
+            <fieldset>
+                <legend><h2>Book your appointment</h2></legend>
+                <label for="first-name">First name</label>
+                <input type="text" name="first_name" id="first-name" class="text-input" required>
+                <br><br>
+                <label for="last-name">Last name</label>
+                <input type="text" name="last_name" id="last-name" class="text-input" required>
+                <br><br>
+                <label for="email-address">Email address</label>
+                <input type="email" name="email_address" id="email-address" class="text-input" required>
+                <br><br>
+                <label for="date">Preferred date</label>
+                <input type="date" name="date" id="date" class="date" required>
+                <br>  
+                <br>
                 <fieldset>
-                    <legend><h2>Book your appointment</h2></legend>
-                    <label for="first-name">First name</label>
-                    <input type="text" name="first_name" id="first-name" class="text-input" required>
-                    <br><br>
-                    <label for="last-name">Last name</label>
-                    <input type="text" name="last_name" id="last-name" class="text-input" required>
-                    <br><br>
-                    <label for="email-address">Email address</label>
-                    <input type="email" name="email_address" id="email-address" class="text-input" required>
-                    <br><br>
-                    <label for="date">Preferred date</label>
-                    <input type="date" name="date" id="date" class="date" required>
-                    <br>  
-                    <br>
-                    <fieldset>
-                        <legend><h3>Choose your augmentation</h3></legend>
-                        <input type="checkbox" name="augmentations" value="Legs">
-                        <label for="legs">Leg prosthesis</label><br><br>
-                        <input type="checkbox" name="augmentations" value="Arms">
-                        <label for="vehicle2">Arm prosthesis</label><br><br>
-                        <input type="checkbox" name="augmentations" value="Torso">
-                        <label for="torso">Torso augmentations</label><br><br>
-                        <input type="checkbox" name="augmentations" value="Neural">
-                        <label for="neural">Neural implants</label><br><br>
-                        <input type="checkbox" name="augmentations" value="Optic">
-                        <label for="optic">Optical implants</label><br>
-                    </fieldset>
-                    <input type="submit" class="submit-button">
-                    <input type="reset" class="reset-button">
+                    <legend><h3>Choose your augmentation</h3></legend>
+                    <input type="checkbox" name="augmentations" value="Legs">
+                    <label for="legs">Leg prosthesis</label><br><br>
+                    <input type="checkbox" name="augmentations" value="Arms">
+                    <label for="vehicle2">Arm prosthesis</label><br><br>
+                    <input type="checkbox" name="augmentations" value="Torso">
+                    <label for="torso">Torso augmentations</label><br><br>
+                    <input type="checkbox" name="augmentations" value="Neural">
+                    <label for="neural">Neural implants</label><br><br>
+                    <input type="checkbox" name="augmentations" value="Optic">
+                    <label for="optic">Optical implants</label><br>
                 </fieldset>
-            </form>
-        </section>
-    </main>
+                <input type="submit" class="submit-button">
+                <input type="reset" class="reset-button">
+            </fieldset>
+        </form>
+    </section>
+</main>
 
     <!--Footer-->
-    <footer>
+    <footer class="section-styling">
         <h2>Find Us</h2>
         <ul id="social">
             <li><a href="http://facebook.com" target="_blank" rel="noopener" aria-label="Visit our Facebook page (opens in new tab)"><i class="fa-brands fa-square-facebook"></i></a></li>
