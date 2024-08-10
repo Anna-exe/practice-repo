@@ -146,11 +146,10 @@ main{
     margin: auto;
 }
 #augmentation-choice{
-    margin: 0 50px;
+    margin: 0 20px 20px;
 }
 fieldset{
     padding-bottom: 30px;
-    margin-bottom: 20px;
     border:#0f8000 1px solid;
 }
 
