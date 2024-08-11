@@ -1,131 +1,120 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# CybernetiX
 
-Welcome Anna Teilane,
+Cybernetix is a fictional website of our possible future offering implants and prosthesis products and services. Targeted on customers that want to upgrade their bio-bodies or replace their lost/worn body parts. Website is useful for people to find out information about Cybernetix products and book an appointment with us.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+The site is responsive for all screen sizes.
 
-You can safely delete this README.md file or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **June 18, 2024**
+![Screenshot of the websites homepage on different devices](assets/images/responsive.png) 
 
-## Gitpod Reminders
+## Features
+* Navigation Bar
+    -   Featured at the top of all three pages, the navigation links are situated to the right. 
+    -  On larger screens they show the text; Home, Services and Contact. On smaller screens, such as mobiles, the navigation links are situated in the burger-icon that expands when you click it.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
 
-`python3 -m http.server`
+* The Header
+    -  At the top left in the header section, there is a company logo, that will take the user to the home page when clicked.   
+    -   The Company logo and sets the main color theme; green, gray, black and white.
+![Screenshot of the header containing company logo and navigation bar](/assets/images/header_image.png)
 
-A blue button should appear to click: _Make Public_,
+* The Home page
+    -   This is the landing page and with it's colourful and inviting picture of people jumping in the sunset it aspires to bring motivation to the user to take the step towards a healthier lifestyle.
+![Screenshot of the landing page image with people on beach in sunset with the text "Become the best version of you!"](/assets/images/new_hero_img.jpg)
+    -   The section below conatins information on WHY the user should take this step and embark on a journey to unlock their full potential. In the text there is a link under the word Tools that brings the user to the services page when clicked.
+    -   The section HOW explains how easy it is to get in contact. In the text there is a link under the word Form that brings the user to the contact page when clicked.
+    -   There is a picture of me, the Coach, to give a more personalized feeling.
+    -   The section the COACH tells more about the certifications and qualifications that the coach possess.
+![Screenshot of the reasons sections with info on why and how to take the step, and a photo of the coach and information about the coach](/assets/images/why_how_coach_links.png)
 
-Another blue button should appear to click: _Open Browser_.
 
-To run a backend Python file, type `python3 app.py` if your Python file is named `app.py`, of course.
+* The Footer
+    -   The footer section includes relevant links to Facebook, Instagram and Youtube.
+    -   The links will open in a new tab and they aspire to give the user more motivation to take the lifechanging step.
+![Screenshot of the Footer with social media links](/assets/images/footer.png)
+* The Services page
+    -   The services page gives the user information on what services are offered
+    -   Personal Training. A picture with training equipment, kettlebells, and an informational text on the benefits with personal training and functional fitness.
+![Screenshot of picture with kettlebells and information about personal training](/assets/images/pt_div.png)
+    -   Nutrition. A picture with food in boxes to give the user a feeling of what will come, since food preparation is a big part of the nutrition coaching. Informational text on the benefits of planning meals and getting knowledge about nutrition in order to make progress with training and getting a healthier lifestyle.
+![Screenshot of picture with foodboxes and information about nutrition](/assets/images/nutrition_div.png)
+    -   Online Coaching. A picture with the App that will be provided to the users once signing up. Informational text on what to excpect from online coaching and how it is working.
+![Screenshot of picture with online coaching app and information about online coaching](/assets/images/online_div.png)
+* The Contact page
+    -   Background picture of a woman training with ropes that flow towards the user. Also giving the user a feeling of connection through the ropes.
+    -   Contact form that allows the user to fill in the necessary contact details to easy get in touch. They are also asked to choose the product of interest; Personal Training, Nutrition or Both.
+    -   Submit button says 3..2..1..Go! Which is a common saying in Functional Fitness and CrossFit when starting a workout.
 
-A blue button should appear to click: _Make Public_,
+        ![Screenshot of the contact form and background picture of woman training with ropes](/assets/images/contact_form.png)    
 
-Another blue button should appear to click: _Open Browser_.
+### Features left to implement
+-   I would like to add a webshop to the page to make it easy and fast for the users to enroll on my services. The webshop would contain of different packages to choose from when it comes to Nutrition and Personal Training.
 
-By Default, Gitpod gives you superuser security privileges. Therefore, you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+## Testing
+-   Accessibility
+    -   I ran the pages through Lighthouse and confirmed that the colors and fonts are easy to read and that the site is accessible.
+    
+    ![Screenshot of Lighthouse result](/assets/images/lighthouse_score.png)
+ 
+-   I tested and confirmed that the page works in different browsers; Chrome, Safari and Firefox.
+-   I tested and confirmed that all internal links are working and redirecting the user between the pages.
+-   I tested that all external links, to social media sites, are woking and opening in a separate tab.
+-   I tested and confirmed that the contact form works, all fields are required, the radio buttons are required (one of them), the email field only accepts email address, and the submit button link works:
+![Screenshot of the Code institute page that is displayed when submitting the form](/assets/images/code_institute_form.png)
 
-To log into the Heroku toolbelt CLI:
+-   HTML
+    -   No errors found when running the code through the [W3C HTML Validator](https://validator.w3.org/)
+![Screenshot of the HTML Validator result](/assets/images/html_validator.png)
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+-   CSS
+    -   No errors found when running the code through the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) 
+![Screenshot of the CSS validator result](/assets/images/css_validator.png)    
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, you can create a new one with _Regenerate API Key_.
+## Bugs
+-   There was a bug causing error on the css file when the Google fonts where imported with the @import link. 
+I reached out to Tutor support that helped me and advised to use the link to add in the html file instead which solved the issue. Though they could not really tell why that was happening.
+### Unfixed bugs
+-   No unfixed bugs
 
-### Connecting your Mongo database
+## Deployment
 
-- **Connect to Mongo CLI on a IDE**
-- navigate to your MongoDB Clusters Sandbox
-- click **"Connect"** button
-- select **"Connect with the MongoDB shell"**
-- select **"I have the mongo shell installed"**
-- choose **mongosh (2.0 or later)** for : **"Select your mongo shell version"**
-- choose option: **"Run your connection string in your command line"**
-- in the terminal, paste the copied code `mongo "mongodb+srv://<CLUSTER-NAME>.mongodb.net/<DBname>" --apiVersion 1 --username <USERNAME>`
-  - replace all `<angle-bracket>` keys with your own data
-- enter password _(will not echo **\*\*\*\*** on screen)_
+### Version Control
+-   The site was created using Gitpod editor and pushed to Github to the remote repository 'optimal_health'.
+-   Git commands were used throughout the development to push the code to the remote repository. The following git commands were used:
+    -   git add . - to add the files to the staging area before being committed.
+    -   git commit -m "commit message" - to commit changes to the local repository queue that are ready for the final step.
+    -   git push - to push all committed code to the remote repository on Github.
 
-------
+### Deployment to Github pages
+-   The site was deployed to Github pages as follows:
+    -   In the Github repository, I navigated to Settings tab
+    -   From the source section drop-down menu, I selected the Master branch and Save
+    -   Once the Master branch was selected, the page provided the link to the website
+-   The live link: [Optimal Health](https://sophietiger.github.io/optimal_health/)
 
-## Release History
+### Cloning of the Repository Code locally
+-   Go to the Github repository that you want to clone
+-   Click on the Code button located above all the project files
+-   Click on HTTPS and copy the repository link
+-   Open the IDE of your choice and and paste the copied git url into the IDE terminal
+-   The project is now created as a local clone
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+## Wireframes
+-   The site was developed with the Mobile-first method. The wireframes were therefore drawn with that thought in mind, and created with [Balsamiq](https://balsamiq.cloud/snx9v5f/pmhksri/rB1D0). First picture: Home page, Second picture: Services page, Third picture: Contact page.
 
-**June 18, 2024,** Add Mongo back into template
+![Home page wireframe](/assets/images/wireframe_index.png) ![Services page wireframe](/assets/images/wireframe_services.png) ![Contact page wireframe](/assets/images/wireframe_contact.png)
 
-**June 14, 2024,** Temporarily remove Mongo until the key issue is resolved
+## Credits
+-   A special thanks to my Mentor for the support and answering all my Questions!
+### Content
+-   The icons in the footer and in the headings were taken from [Font Awesome](https://fontawesome.com/)   
+The social media links to Facebook and Instagram are the real ones this company is using.
+-   The Favicon in the Title of the page was taken from [Favicon](https://favicon.io/emoji-favicons/)
+-   I took inspiration from the Love Running project to create the header, footer and contact page.
+### Media
+-   The images in the hero section, on the servives page and the contact page was taken from [Pexels](https://www.pexels.com/)
+-   The profile picture on the Home page is from my private gallery.
+-   The online coaching image on the services page, with pictures of an app, was with permission taken from [Nutrition Data](https://nutritiondata.se/)
 
-**May 28 2024:** Fix Mongo and Links installs
 
-**April 26 2024:** Update node version to 16
 
-**September 20 2023:** Update Python version to 3.9.17.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
