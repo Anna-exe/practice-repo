@@ -1,33 +1,33 @@
 /* Google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Kode+Mono:wght@400..700&display=swap');
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     /*Background image styling*/
     background: black url("../images/background.jpg") no-repeat fixed right top;
     background-size: cover;
     /*General body styles*/
-    margin:0;
-    color:#1DF500;
+    margin: 0;
+    color: #1DF500;
     min-height: 100vh;
     font-family: 'Kode Mono', monospace;
     text-align: center;
 }
 
 /*Header*/
-header{
+header {
     position: fixed;
     z-index: 99;
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    top:0;
+    top: 0;
 }
 
 /* Navbar styles with dropdown toggle */
@@ -60,51 +60,50 @@ nav {
     margin-top: 15px;
 }
 
-#menu > li {
+#menu>li {
     margin-bottom: 1em;
 }
 
 /*Anchor tag decoration*/
-a{
+a {
     text-decoration: none;
-    color:#1DF500;
+    color: #1DF500;
 }
 
-.section-styling{
+.section-styling {
     background-color: rgba(0, 0, 0, 0.40);
     box-shadow: 0 0 5px black;
     padding: 25px;
     margin: 15px;
 }
-.darker-section-styling{
+
+.darker-section-styling {
     background-color: rgba(0, 0, 0, 0.70);
     box-shadow: 0 0 5px black;
     padding: 10px;
 }
 
-.active{
+.active {
     text-decoration: underline 0.15em #1DF500;
 }
 
-.hidden{
-    display: none;
-}
-
 /*Headings*/
-h1, h2, h3{
+h1,
+h2,
+h3 {
     color: white;
-    text-shadow:#1DF500 1px 0 7px;
+    text-shadow: #1DF500 1px 0 7px;
 }
 
-hr{
+hr {
     border: 1px solid #1DF500;
     box-shadow: #1DF500 0 0 10px;
-    width:100%;
+    width: 100%;
 }
 
 
 /*Main content*/
-main{
+main {
     /*Make main element take any surplus space to push footer down*/
     flex: 1 0 auto;
     flex-direction: column;
@@ -112,27 +111,27 @@ main{
 }
 
 /*Hero image*/
-#hero{
-    height:500px;
+#hero {
+    height: 500px;
     background: url(../images/hero-img.png) no-repeat center center / cover;
-    box-shadow:none;
+    box-shadow: none;
     font-size: larger;
     position: relative;
 }
 
 /*Slogan styling in header*/
 #slogan {
-    width:100%;
+    width: 100%;
     letter-spacing: 10px;
     text-shadow: 0px 0px 4px white;
     font-size: 140%;
     position: absolute;
-    bottom:0;
+    bottom: 0;
     padding-bottom: 30px;
 }
 
 /*About section*/
-#about-description>*{
+#about-description>* {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -142,52 +141,57 @@ main{
 }
 
 /*Products section*/
-#products h2, h3, p{
-    padding:15px;
+#products h2,
+h3,
+p {
+    padding: 15px;
 }
-#product-img{
+
+#product-img {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 /*Booking form*/
-#booking{
+#booking {
     max-width: 550px;
     margin: auto;
 }
-#augmentation-choice{
+
+#augmentation-choice {
     margin: 0 20px 20px;
 }
-fieldset{
+
+fieldset {
     padding-bottom: 20px;
-    border:#0f8000 1px solid;
+    border: #0f8000 1px solid;
 }
 
-.text-input{
+.text-input {
     background-color: #ffffff24;
     color: white;
 }
 
-input[type="checkbox" i] {
+input[type="checkbox"i] {
     accent-color: rgb(0, 255, 247);
 }
 
-.submit-button{
+.submit-button {
     border-radius: 2px;
     padding: 5px 15px;
     background-color: #ffffff24;
     color: #1DF500;
 }
 
-.reset-button{
+.reset-button {
     border-radius: 2px;
     padding: 5px 15px;
     background-color: #1eff0052;
     color: black
 }
 
-#social{
+#social {
     list-style-type: none;
     display: flex;
     justify-content: space-evenly;
@@ -198,13 +202,15 @@ input[type="checkbox" i] {
 
 /*Tablets 768px and up*/
 @media screen and (min-width: 768px) {
-    .section-styling{
-        margin:30px;
+    .section-styling {
+        margin: 30px;
     }
-    .darker-section-styling{
-        padding:0;
+
+    .darker-section-styling {
+        padding: 0;
     }
-    #about-description{
+
+    #about-description {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -212,6 +218,7 @@ input[type="checkbox" i] {
         align-items: center;
         gap: 20px;
     }
+
     #about-description>* {
         width: 300px;
     }
@@ -221,7 +228,7 @@ input[type="checkbox" i] {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
-        align-items: center; 
+        align-items: center;
         gap: 20px;
     }
 
@@ -239,14 +246,15 @@ input[type="checkbox" i] {
         display: flex;
     }
 
-    #menu > li {
+    #menu>li {
         padding-left: 1rem;
     }
 
     .nav-toggle-label {
         display: none;
     }
-    #logo{
+
+    #logo {
         padding-left: 30px;
         font-size: 250%;
     }
@@ -254,24 +262,27 @@ input[type="checkbox" i] {
 
 /*Large devices (laptops and desktops, 992px and up)*/
 @media screen and (min-width: 992px) {
-    li{
+    li {
         text-decoration: underline 0.15em rgba(0, 0, 0, 0);
         transition: text-decoration-color 300ms;
     }
-    li:hover{
+
+    li:hover {
         text-decoration-color: #1DF500;
     }
-    #about-description>*{
-        width:400px;
-    }
-    }
 
-    /*Larger devices (laptops and desktops, 1350px and up)*/
+    #about-description>* {
+        width: 400px;
+    }
+}
+
+/*Larger devices (laptops and desktops, 1350px and up)*/
 @media screen and (min-width: 1350px) {
     #hero {
         height: 600px;
     }
-    #about-description>*{
+
+    #about-description>* {
         width: 500px;
     }
 }
