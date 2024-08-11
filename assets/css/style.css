@@ -99,6 +99,7 @@ h1, h2, h3{
 hr{
     border: 1px solid #1DF500;
     box-shadow: #1DF500 0 0 10px;
+    width:100%;
 }
 
 
@@ -137,6 +138,7 @@ main{
 #about-description>*{
     display: flex;
     flex-direction: column;
+    align-items: center;
     background-color: rgba(0, 0, 0, 0.40);
     box-shadow: 0 0 5px black;
     margin: 30px 0 30px;
@@ -205,6 +207,18 @@ input[type="checkbox" i] {
     .darker-section-styling{
         padding:0;
     }
+    #about-description{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        gap: 20px;
+    }
+    #about-description>* {
+        width: 300px;
+    }
+
     #product-img {
         display: flex;
         flex-direction: row;
@@ -249,6 +263,9 @@ input[type="checkbox" i] {
     }
     li:hover{
         text-decoration-color: #1DF500;
+    }
+    #about-description>*{
+        width:400px;
     }
     }
 
