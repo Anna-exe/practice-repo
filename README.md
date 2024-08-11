@@ -46,19 +46,27 @@ The site is responsive for all screen sizes.
 ![Screenshot of the booking form](/assets/images/booking-readme.png)    
 
 ### Features left to implement
--   I would like to add a bigger range
+-   I would like to add a bigger range of products for each category mentioned in products page.
+-   Reviews page, showing customer experiences with ratings and pictures
+-   List and adresses of Cyber Clinics and names of certified Cyber Doctors.
 
 ## Testing
 -   Accessibility
     -   I ran the pages through Lighthouse and confirmed that the colors and fonts are easy to read and that the site is accessible.
-    
-    ![Screenshot of Lighthouse result](/assets/images/lighthouse_score.png)
+    -   Had a slow loading score in Brave browser - fixed it by disabling my extensions.
+    -   Label elements in booking form were not assigned to input elements. Fixed by adding id names to input elements.
+    -   Encountered error **"Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'interest-cohort'."**
+    Found the solution on https://github.com/orgs/community/discussions/52356 by adding meta tag " <meta http-equiv="Permissions-Policy" content="interest-cohort=()">"
+    -   As a result, website performance score now is 99%
+    ![Screenshot of Lighthouse result](/assets/images/lighthouse-readme.png)
  
--   I tested and confirmed that the page works in different browsers; Chrome, Safari and Firefox.
--   I tested and confirmed that all internal links are working and redirecting the user between the pages.
--   I tested that all external links, to social media sites, are woking and opening in a separate tab.
--   I tested and confirmed that the contact form works, all fields are required, the radio buttons are required (one of them), the email field only accepts email address, and the submit button link works:
-![Screenshot of the Code institute page that is displayed when submitting the form](/assets/images/code_institute_form.png)
+-   Tested and confirmed that the page works in different browsers: Brave(Chrome), Microsoft Edge, Mozilla.
+-   Tested and confirmed that all internal links are working and redirecting the user between the pages.
+-   Tested that all external links, to social media sites, are working and opening in a separate tab.
+-   Tested and confirmed that the booking form works, all fields are required, (except checkbox, as it requires javascript which I am not familiar to yet).
+-   Tested that the email field only accepts email address
+-   Tested Submit button that brings to CodeInstitute page and Reset button clears the form
+![Screenshot of the Code institute page that is displayed when submitting the form](/assets/images/code-institute-submit-readme.png)
 
 -   HTML
     -   No errors found when running the code through the [W3C HTML Validator](https://validator.w3.org/)
