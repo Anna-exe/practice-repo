@@ -1,53 +1,52 @@
 # CybernetiX
 
-Cybernetix is a fictional website of our possible future offering implants and prosthesis products and services. Targeted on customers that want to upgrade their bio-bodies or replace their lost/worn body parts. Website is useful for people to find out information about Cybernetix products and book an appointment with us.
+Cybernetix is a fictional website of our possible future offering implants and prosthesis products and services. Targeted on customers that want to upgrade their bio-bodies or replace their lost/worn body parts. Website is useful for people to find out information about Cybernetix products and book an appointment with us. The theme used is minimalistic and pleased to the eye as website has a medical purpose.
 
 The site is responsive for all screen sizes.
 
-![Screenshot of the websites homepage on different devices](assets/images/responsive.png) 
+![Screenshot of the websites homepage on different devices](assets/images/mockup-readme.webp) 
 
 ## Features
 * Navigation Bar
-    -   Featured at the top of all three pages, the navigation links are situated to the right. 
-    -  On larger screens they show the text; Home, Services and Contact. On smaller screens, such as mobiles, the navigation links are situated in the burger-icon that expands when you click it.
+    -  Featured at the top of all three pages, the navigation links are situated to the right. 
+    -  On larger screens they show the text; About, Products and Booking. On smaller screens, such as mobiles, the navigation links are situated in the burger-icon that expands when you click it.
 
 
 * The Header
-    -  At the top left in the header section, there is a company logo, that will take the user to the home page when clicked.   
-    -   The Company logo and sets the main color theme; green, gray, black and white.
-![Screenshot of the header containing company logo and navigation bar](/assets/images/header_image.png)
+    -  At the top left in the header section, there is a company logo name, that will take the user to the home page when clicked.   
+    -   The Company logo sets the font theme of futuristic coding style and a main color theme: green, white and black with some transparency.
+![Screenshot of the header containing company logo and navigation bar](/assets/images/header-readme.png)
 
 * The Home page
-    -   This is the landing page and with it's colourful and inviting picture of people jumping in the sunset it aspires to bring motivation to the user to take the step towards a healthier lifestyle.
-![Screenshot of the landing page image with people on beach in sunset with the text "Become the best version of you!"](/assets/images/new_hero_img.jpg)
-    -   The section below conatins information on WHY the user should take this step and embark on a journey to unlock their full potential. In the text there is a link under the word Tools that brings the user to the services page when clicked.
-    -   The section HOW explains how easy it is to get in contact. In the text there is a link under the word Form that brings the user to the contact page when clicked.
-    -   There is a picture of me, the Coach, to give a more personalized feeling.
-    -   The section the COACH tells more about the certifications and qualifications that the coach possess.
-![Screenshot of the reasons sections with info on why and how to take the step, and a photo of the coach and information about the coach](/assets/images/why_how_coach_links.png)
+    -   This is the landing page with it's vibrant art connecting human and robotic hands, together with a slogan text, inviting to embrace new possibilities. Picture is resembling the art of famous artist Michelangelo - the moment of divine creation.
+
+![Screenshot of the landing page image  "Discover your new self"](/assets/images/landing-readme.png)
+
+* The About Us section
+    -   The section below contains four paragraphs which explains user what is CybernetiX company offering and how user can benefit from their products.
+    - At the bottom of the page, after user is introduced to CybernetiX, there is a button linked to products the page.
+![Screenshot of the main content section](/assets/images/main-readme.png)
 
 
 * The Footer
-    -   The footer section includes relevant links to Facebook, Instagram and Youtube.
-    -   The links will open in a new tab and they aspire to give the user more motivation to take the lifechanging step.
-![Screenshot of the Footer with social media links](/assets/images/footer.png)
-* The Services page
-    -   The services page gives the user information on what services are offered
-    -   Personal Training. A picture with training equipment, kettlebells, and an informational text on the benefits with personal training and functional fitness.
-![Screenshot of picture with kettlebells and information about personal training](/assets/images/pt_div.png)
-    -   Nutrition. A picture with food in boxes to give the user a feeling of what will come, since food preparation is a big part of the nutrition coaching. Informational text on the benefits of planning meals and getting knowledge about nutrition in order to make progress with training and getting a healthier lifestyle.
-![Screenshot of picture with foodboxes and information about nutrition](/assets/images/nutrition_div.png)
-    -   Online Coaching. A picture with the App that will be provided to the users once signing up. Informational text on what to excpect from online coaching and how it is working.
-![Screenshot of picture with online coaching app and information about online coaching](/assets/images/online_div.png)
-* The Contact page
-    -   Background picture of a woman training with ropes that flow towards the user. Also giving the user a feeling of connection through the ropes.
-    -   Contact form that allows the user to fill in the necessary contact details to easy get in touch. They are also asked to choose the product of interest; Personal Training, Nutrition or Both.
-    -   Submit button says 3..2..1..Go! Which is a common saying in Functional Fitness and CrossFit when starting a workout.
+    -   The footer section includes relevant links to Facebook, Instagram and Twitter, following by copyright text.
+    -   The links will open in a new tab and will introduce users to our happy customer stories shared on social networks.
+![Screenshot of the Footer with social media links](/assets/images/footer-readme.png)
 
-        ![Screenshot of the contact form and background picture of woman training with ropes](/assets/images/contact_form.png)    
+* The Products page
+    -   The products page gives the user a short preview on what kind of products company offers.
+    -   There is a short paragraph of what page is offering and a text with anchor link leading to the booking page.
+![Screenshot of products page showing examples of augmentations offered](/assets/images/products-readme.png)
+
+* The Booking page
+    -   Booking form with minimalistic design that is easy to understand.
+    -   Form allows user to fill in personal details that are necessary for appointment with Cyber-Doctors.
+    -   Checkboxes allow to choose what kind of augmentation user wants to install.
+    -   At the bottom of the form there are Submit and Reset buttons, designed with different styles to show that buttons have different purpose.
+![Screenshot of the booking form](/assets/images/booking-readme.png)    
 
 ### Features left to implement
--   I would like to add a webshop to the page to make it easy and fast for the users to enroll on my services. The webshop would contain of different packages to choose from when it comes to Nutrition and Personal Training.
+-   I would like to add a bigger range
 
 ## Testing
 -   Accessibility
