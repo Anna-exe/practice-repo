@@ -70,6 +70,7 @@ a {
     color: #1DF500;
 }
 
+/*General styling classes*/
 .section-styling {
     background-color: rgba(0, 0, 0, 0.40);
     box-shadow: 0 0 5px black;
@@ -156,16 +157,16 @@ p {
 /*Booking form*/
 #booking {
     max-width: 550px;
-    margin: auto;
-}
-
-#augmentation-choice {
-    margin: 0 20px 20px;
+    margin: 30px auto;
 }
 
 fieldset {
     padding-bottom: 20px;
     border: #0f8000 1px solid;
+}
+
+#augmentation-choice {
+    margin: 0 20px 20px;
 }
 
 .text-input {
@@ -191,13 +192,22 @@ input[type="checkbox"i] {
     color: black
 }
 
+/*Footer*/
+footer {
+    background-color: rgba(0, 0, 0, 0.40);
+    box-shadow: 0 0 5px black;
+    padding: 5px;
+}
 #social {
     list-style-type: none;
     display: flex;
     justify-content: space-evenly;
     font-size: 200%;
     padding-inline-start: 0%;
-    margin-block: 0.5em;
+}
+
+footer p {
+    font-size: 0.7rem;
 }
 
 /*Tablets 768px and up*/
