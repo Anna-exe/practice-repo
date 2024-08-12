@@ -53,10 +53,10 @@ The site is responsive for all screen sizes.
 ## Testing
 -   Accessibility
     -   I ran the pages through Lighthouse and confirmed that the colors and fonts are easy to read and that the site is accessible.
+-   Performance
     -   Had a slow loading score in Brave browser - fixed it by disabling my extensions.
     -   Label elements in booking form were not assigned to input elements. Fixed by adding id names to input elements.
-    -   Encountered error **"Error with Permissions-Policy header: Origin trial controlled feature not enabled: 'interest-cohort'."**
-    Found the solution on https://github.com/orgs/community/discussions/52356 by adding meta tag " <meta http-equiv="Permissions-Policy" content="interest-cohort=()">"
+    -   Fixed issue with autocomplete attributes in input elements.
     -   As a result, website performance score now is 99%
     ![Screenshot of Lighthouse result](/assets/images/lighthouse-readme.png)
  
@@ -69,23 +69,32 @@ The site is responsive for all screen sizes.
 ![Screenshot of the Code institute page that is displayed when submitting the form](/assets/images/code-institute-submit-readme.png)
 
 -   HTML
-    -   No errors found when running the code through the [W3C HTML Validator](https://validator.w3.org/)
-![Screenshot of the HTML Validator result](/assets/images/html_validator.png)
+    -   Some errors found in validator [W3C HTML Validator](https://validator.w3.org/)
+![Screenshot of the HTML Validator result with error](/assets/images/html-error-readme.png)
+        -   1. Removed permissions policy meta tag
+        -   2. Fixed by adding hidden heading to hero section
+        -   3. Removed button element from anchor tag and styled it
+        -   4. Removed heading element from button and style button text
+    -   As a result, validator confirmed that there are no errors
+![Screenshot of the HTML Validator result](/assets/images/html-no-error-readme.png)
 
 -   CSS
-    -   No errors found when running the code through the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) 
-![Screenshot of the CSS validator result](/assets/images/css_validator.png)    
+    -   One error found in W3C CSS Validator [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) 
+![Screenshot of the CSS validator result with error](/assets/images/css-error-readme.png)
+        - Fixed the typo
+![Screenshot of the CSS validator result](/assets/images/css-no-error-readme.png)
 
 ## Bugs
 -   There was a bug causing error on the css file when the Google fonts where imported with the @import link. 
 I reached out to Tutor support that helped me and advised to use the link to add in the html file instead which solved the issue. Though they could not really tell why that was happening.
+
 ### Unfixed bugs
 -   No unfixed bugs
 
 ## Deployment
 
 ### Version Control
--   The site was created using Gitpod editor and pushed to Github to the remote repository 'optimal_health'.
+-   The site was created using Gitpod editor and pushed to Github to the remote repository 'cybernetix'.
 -   Git commands were used throughout the development to push the code to the remote repository. The following git commands were used:
     -   git add . - to add the files to the staging area before being committed.
     -   git commit -m "commit message" - to commit changes to the local repository queue that are ready for the final step.
@@ -96,7 +105,7 @@ I reached out to Tutor support that helped me and advised to use the link to add
     -   In the Github repository, I navigated to Settings tab
     -   From the source section drop-down menu, I selected the Master branch and Save
     -   Once the Master branch was selected, the page provided the link to the website
--   The live link: [Optimal Health](https://sophietiger.github.io/optimal_health/)
+-   The live link: [CybernetiX](https://anna-exe.github.io/cybernetix/)
 
 ### Cloning of the Repository Code locally
 -   Go to the Github repository that you want to clone
@@ -106,22 +115,27 @@ I reached out to Tutor support that helped me and advised to use the link to add
 -   The project is now created as a local clone
 
 ## Wireframes
--   The site was developed with the Mobile-first method. The wireframes were therefore drawn with that thought in mind, and created with [Balsamiq](https://balsamiq.cloud/snx9v5f/pmhksri/rB1D0). First picture: Home page, Second picture: Services page, Third picture: Contact page.
-
-![Home page wireframe](/assets/images/wireframe_index.png) ![Services page wireframe](/assets/images/wireframe_services.png) ![Contact page wireframe](/assets/images/wireframe_contact.png)
+-   The site was developed with the Mobile-first method. The wireframes were drawn by hand on paper and used as template througout the project. 
 
 ## Credits
--   A special thanks to my Mentor for the support and answering all my Questions!
+-   A special thanks to my Mentor for the support.
+-   Google was great help
+
 ### Content
--   The icons in the footer and in the headings were taken from [Font Awesome](https://fontawesome.com/)   
-The social media links to Facebook and Instagram are the real ones this company is using.
--   The Favicon in the Title of the page was taken from [Favicon](https://favicon.io/emoji-favicons/)
--   I took inspiration from the Love Running project to create the header, footer and contact page.
+-   The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
+-   The Favicon in the Title of the page was taken from free source and I used Photoshop to style it[Favicon](https://www.vectorstock.com/)
+-   The layout and design of website was inspired by:
+    - Code Institute Love Running project
+    - Code Institute sample project
+    - Cyberpunk 2077 wikipedia
+
 ### Media
--   The images in the hero section, on the servives page and the contact page was taken from [Pexels](https://www.pexels.com/)
--   The profile picture on the Home page is from my private gallery.
--   The online coaching image on the services page, with pictures of an app, was with permission taken from [Nutrition Data](https://nutritiondata.se/)
+-   The image in the hero section [hdwallpapers](https://www.hdwallpapers.in/)
+-   The body's background image [WallpaperFlare](https://www.wallpaperflare.com/)
+-   The augmentation pictures [Netzona](https://netzona.org/)
 
-
-
-
+### Tools
+-   Image converter to webp format [CloudConvert](https://cloudconvert.com/)
+-   Brushes used for hero image [BrushEezy](https://www.brusheezy.com/)
+-   Mockup of preview in different devices[MeadiaModifier](https://mediamodifier.com/)
+-   Photoshop
