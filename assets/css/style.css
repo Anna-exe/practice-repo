@@ -91,6 +91,7 @@ footer {
     position: relative;
 }
 #gardens #garden, #garden2{
+    gap:5px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -123,7 +124,7 @@ footer {
         gap: 50px;
     }
     #garden {
-        width:70vw;
+        width:80vw;
     }
 }
 
