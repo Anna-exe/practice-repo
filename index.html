@@ -7,10 +7,10 @@
     <meta name ="description" content="Match pair memory card game with fantasy theme">
     <meta name="keyword" content="match, pair, game, online, memory, fantasy, dark, card">
     <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
     <title>Match pairs</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -28,115 +28,48 @@
 
     <!-- Main game content -->
     <main>
-        <div id="rules">Match the pairs before time runs out!</div>
-        <div id="time"></div>
         <!-- Cards grid -->
-        <!--<div id="cards-grid">
-            <div class="memory-card">
-                <img src="assets/images/blonde-angel.webp" alt="blonde angel" class="front-face">
-                <img src="assets/images/blank.webp" alt="cards back" class="back-face">
+        <div id="game-area">
+            <div id="front-grid" class="card-grid">
+                <div class="card front"><img src="assets/images/blonde-angel.webp" alt="blonde angel"></div>
+                <div class="card front"><img src="assets/images/dark-angel.webp" alt="dark angel"></div>
+                <div class="card front"><img src="assets/images/druid.webp" alt="druid" ></div>
+                <div class="card front"><img src="assets/images/ghost.webp" alt="ghost"></div>
+                <div class="card front"><img src="assets/images/goddess.webp" alt="goddess"></div>
+                <div class="card front"><img src="assets/images/sauron.webp" alt="sauron"></div>
+                <div class="card front"><img src="assets/images/silent-angel.webp" alt="silent angel"></div>
+                <div class="card front"><img src="assets/images/warrior.webp" alt="warrior"></div>
+                <div class="card front"><img src="assets/images/blonde-angel.webp" alt="blonde angel"></div>
+                <div class="card front"><img src="assets/images/dark-angel.webp" alt="dark angel"></div>
+                <div class="card front"><img src="assets/images/druid.webp" alt="druid" ></div>
+                <div class="card front"><img src="assets/images/ghost.webp" alt="ghost"></div>
+                <div class="card front"><img src="assets/images/goddess.webp" alt="goddess"></div>
+                <div class="card front"><img src="assets/images/sauron.webp" alt="sauron"></div>
+                <div class="card front"><img src="assets/images/silent-angel.webp" alt="silent angel"></div>
+                <div class="card front"><img src="assets/images/warrior.webp" alt="warrior"></div>
             </div>
-            <div class="memory-card">
-                <img src="assets/images/dark-angel.webp" alt="dark angel" class="front-face">
-                <img src="assets/images/blank.webp" alt="cards back" class="back-face">
+            <div id="back-grid" class="card-grid">
+                <div class="card back"><img src="assets/images/blank.webp" alt="cards back"></div>
+                <div class="card back"><img src="assets/images/blank.webp" alt="cards back"></div>
+                <div class="card back"><img src="assets/images/blank.webp" alt="cards back"></div>
+                <div class="card back"><img src="assets/images/blank.webp" alt="cards back"></div>
+                <div class="card back"><img src="assets/images/blank.webp" alt="cards back"></div>
+                <div class="card back"><img src="assets/images/blank.webp" alt="cards back"></div>
+                <div class="card back"><img src="assets/images/blank.webp" alt="cards back"></div>
+                <div class="card back"><img src="assets/images/blank.webp" alt="cards back"></div>
+                <div class="card back"><img src="assets/images/blank.webp" alt="cards back"></div>
+                <div class="card back"><img src="assets/images/blank.webp" alt="cards back"></div>
+                <div class="card back"><img src="assets/images/blank.webp" alt="cards back"></div>
+                <div class="card back"><img src="assets/images/blank.webp" alt="cards back"></div>
+                <div class="card back"><img src="assets/images/blank.webp" alt="cards back"></div>
+                <div class="card back"><img src="assets/images/blank.webp" alt="cards back"></div>
+                <div class="card back"><img src="assets/images/blank.webp" alt="cards back"></div>
+                <div class="card back"><img src="assets/images/blank.webp" alt="cards back"></div>
             </div>
-            <div class="memory-card">
-                <img src="assets/images/druid.webp" alt="druid" class="front-face">
-                <img src="assets/images/blank.webp" alt="cards back" class="back-face">
-            </div>
-            <div class="memory-card">
-                <img src="assets/images/ghost.webp" alt="ghost" class="front-face">
-                <img src="assets/images/blank.webp" alt="cards back" class="back-face">
-            </div>
-            <div class="memory-card">
-                <img src="assets/images/goddess.webp" alt="goddess" class="front-face">
-                <img src="assets/images/blank.webp" alt="cards back" class="back-face">
-            </div>
-            <div class="memory-card">
-                <img src="assets/images/sauron.webp" alt="sauron" class="front-face">
-                <img src="assets/images/blank.webp" alt="cards back" class="back-face">
-            </div>
-            <div class="memory-card">
-                <img src="assets/images/silent-angel.webp" alt="silent angel" class="front-face">
-                <img src="assets/images/blank.webp" alt="cards back" class="back-face">
-            </div>
-            <div class="memory-card">
-                <img src="assets/images/warrior.webp" alt="warrior" class="front-face">
-                <img src="assets/images/blank.webp" alt="cards back" class="back-face">
-            </div>
-            <div class="memory-card">
-                <img src="assets/images/blonde-angel.webp" alt="blonde angel" class="front-face">
-                <img src="assets/images/blank.webp" alt="cards back" class="back-face">
-            </div>
-            <div class="memory-card">
-                <img src="assets/images/dark-angel.webp" alt="dark angel" class="front-face">
-                <img src="assets/images/blank.webp" alt="cards back" class="back-face">
-            </div>
-            <div class="memory-card">
-                <img src="assets/images/druid.webp" alt="druid" class="front-face">
-                <img src="assets/images/blank.webp" alt="cards back" class="back-face">
-            </div>
-            <div class="memory-card">
-                <img src="assets/images/ghost.webp" alt="ghost" class="front-face">
-                <img src="assets/images/blank.webp" alt="cards back" class="back-face">
-            </div>
-            <div class="memory-card">
-                <img src="assets/images/goddess.webp" alt="goddess" class="front-face">
-                <img src="assets/images/blank.webp" alt="cards back" class="back-face">
-            </div>
-            <div class="memory-card">
-                <img src="assets/images/sauron.webp" alt="sauron" class="front-face">
-                <img src="assets/images/blank.webp" alt="cards back" class="back-face">
-            </div>
-            <div class="memory-card">
-                <img src="assets/images/silent-angel.webp" alt="silent angel" class="front-face">
-                <img src="assets/images/blank.webp" alt="cards back" class="back-face">
-            </div>
-            <div class="memory-card">
-                <img src="assets/images/warrior.webp" alt="warrior" class="front-face">
-                <img src="assets/images/blank.webp" alt="cards back" class="back-face">
-            </div>
-        </div>-->
-        <div id="gardens">
-        <div id="garden">
-            <div class="items front"><img src="assets/images/test.webp" alt="test-front"></div>
-            <div class="items front"><img src="assets/images/test.webp" alt="test-front"></div>
-            <div class="items front"><img src="assets/images/test.webp" alt="test-front"></div>
-            <div class="items front"><img src="assets/images/test.webp" alt="test-front"></div>
-            <div class="items front"><img src="assets/images/test.webp" alt="test-front"></div>
-            <div class="items front"><img src="assets/images/test.webp" alt="test-front"></div>
-            <div class="items front"><img src="assets/images/test.webp" alt="test-front"></div>
-            <div class="items front"><img src="assets/images/test.webp" alt="test-front"></div>
-            <div class="items front"><img src="assets/images/test.webp" alt="test-front"></div>
-            <div class="items front"><img src="assets/images/test.webp" alt="test-front"></div>
-            <div class="items front"><img src="assets/images/test.webp" alt="test-front"></div>
-            <div class="items front"><img src="assets/images/test.webp" alt="test-front"></div>
-            <div class="items front"><img src="assets/images/test.webp" alt="test-front"></div>
-            <div class="items front"><img src="assets/images/test.webp" alt="test-front"></div>
-            <div class="items front"><img src="assets/images/test.webp" alt="test-front"></div>
-            <div class="items front"><img src="assets/images/test.webp" alt="test-front"></div>
         </div>
-        <div id="garden2">
-            <div class="items back"><img src="assets/images/blank-test.png" alt="test-blank"></div>
-            <div class="items back"><img src="assets/images/blank-test.png" alt="test-blank"></div>
-            <div class="items back"><img src="assets/images/blank-test.png" alt="test-blank"></div>
-            <div class="items back"><img src="assets/images/blank-test.png" alt="test-blank"></div>
-            <div class="items back"><img src="assets/images/blank-test.png" alt="test-blank"></div>
-            <div class="items back"><img src="assets/images/blank-test.png" alt="test-blank"></div>
-            <div class="items back"><img src="assets/images/blank-test.png" alt="test-blank"></div>
-            <div class="items back"><img src="assets/images/blank-test.png" alt="test-blank"></div>
-            <div class="items back"><img src="assets/images/blank-test.png" alt="test-blank"></div>
-            <div class="items back"><img src="assets/images/blank-test.png" alt="test-blank"></div>
-            <div class="items back"><img src="assets/images/blank-test.png" alt="test-blank"></div>
-            <div class="items back"><img src="assets/images/blank-test.png" alt="test-blank"></div>
-            <div class="items back"><img src="assets/images/blank-test.png" alt="test-blank"></div>
-            <div class="items back"><img src="assets/images/blank-test.png" alt="test-blank"></div>
-            <div class="items back"><img src="assets/images/blank-test.png" alt="test-blank"></div>
-            <div class="items back"><img src="assets/images/blank-test.png" alt="test-blank"></div>
-        </div></div>
         <!-- Score and action section -->
         <div id="actions">
-            <p>Score: <span id="score"></span></p>
+            Score: <span id="score"></span>
             <button id="restart-btn" onclick="restart()">Restart</button>
         </div>
     </main>

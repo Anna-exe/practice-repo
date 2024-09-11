@@ -34,10 +34,6 @@ header {
     max-height: 70px;
 }
 
-#rules{
-    text-align: center;
-}
-
 /* Music control styling */
 #music-div button {
     background-color: transparent;
@@ -73,10 +69,41 @@ main {
     margin-top: 20px;
 }
 
+
+/* Game grid area */
+#game-area {
+    position: relative;
+}
+/* Separate game grid to match amount of cards */
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+#front-grid {
+    margin: 30px 0;
+  }
+
+#back-grid {
+    position: absolute;
+    left:0;
+    top:0;
+}
+
+.card {
+    margin: 2px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card img {
+    width: 100%;
+    border-radius: 5%;
+}
+
 /* Footer */
 footer {
     margin-bottom: 20px;
-    font-size: 80%;
+    font-size: medium;
 }
 
 #actions {
@@ -85,51 +112,23 @@ footer {
     justify-content: space-around;
 }
 
-
-/* testing */
-#gardens {
-    position: relative;
-}
-#gardens #garden, #garden2{
-    gap:5px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-}
-#garden {
-    margin: 30px 0;
-  }
-
-#garden2{
-
-    position: absolute;
-    left:0;
-    top:0;
-}
-
-.items {
-    margin: 2px;
-    display: flex;
-    flex-wrap: wrap;
-}
-.items img {
-    width: 100%;
-    border-radius: 5%;
-}
-
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px)  {
     header{
         font-size: x-large;
         gap: 50px;
     }
-    #garden {
+    #game-area {
         width:80vw;
+    }
+    .card-grid{
+        gap:10px;
     }
 }
 
+/* Media query: laptops and larger (1024px and up) */
 @media screen and (min-width: 1024px) {
-    #gardens #garden, #garden2 {
+    .card-grid {
         width: 80vw;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;

@@ -23,11 +23,4 @@ function musicControls() {
     
 }
 
-// Card game grid
-const grid = document.getElementById('grid');
-let cards = [];
-let firstCard, secondCard;
-let lockBoard = false;
-let score = 0;
-
-document.getElementById('score').textContent = score;
+// Card game
