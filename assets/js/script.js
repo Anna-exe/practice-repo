@@ -3,7 +3,7 @@ window.onload = () => {
     musicControls();
     loadCards();
 }
-
+//
 //* Music controls
 
 function musicControls() {
@@ -25,34 +25,37 @@ function musicControls() {
     
 }
 
-const frontGrid = document.getElementById('front-grid');
-const cardsFront = [
+const cards = [
     {
-        src: 'assets/images/blonde-angel.webp',
-        alt: 'Blonde Angel'
+        name: 'blonde angel',
+        image: 'assets/images/blonde-angel.webp'
     },
     {
-        src: 'assets/images/dark-angel.webp',
-        alt: 'Dark Angel'
+        name: 'dark angel',
+        image: 'assets/images/dark-angel.webp'
     },
     {
-        src: 'assets/images/druid.webp',
-        alt: 'Druid'
+        name: 'druid',
+        image: 'assets/images/druid.webp'
+    },
+    {
+        name: 'ghost',
+        image: 'assets/images/ghost.webp'
+    },
+    {
+        name: 'goddess',
+        image: 'assets/images/goddess.webp'
+    },
+    {
+        name: 'sauron',
+        image: 'assets/images/sauron.webp'
+    },
+    {
+        name: 'silent angel',
+        image: 'assets/images/silent-angel.webp'
+    },
+    {
+        name: 'warrior',
+        image: 'assets/images/warrior.webp'
     }
-
 ];
-
-
-frontGrid.innerHTML = loader;
-
-
-//* Load cards grid
-function loadCards(){
-    let loader= "";
-    let count = 0;
-    for (let i=0; i < cardsFront.lenght; i++){
-        let s = `<div class='card front'><img src='${card.location}' alt='${card.alt}' id='card${count}'></div>`;
-        loader += s;
-        count++;
-    }
-}
