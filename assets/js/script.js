@@ -91,3 +91,11 @@ const cards = [
         image: 'assets/images/warrior.webp'
     }
 ];
+
+function loadCards(){
+    for (let i = 0; i < cards.length; i++) {
+        let blank = document.createElement('img');
+        blank.setAttribute('src', 'assets/images/blank.webp')
+        
+    }
+}
