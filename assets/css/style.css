@@ -67,24 +67,12 @@ main {
     /* Make main element take any surplus space to push footer down*/
     flex: 1 0 auto;
     margin-top: 20px;
+    width: 95vw;
 }
 
 
-/* Game grid area */
-#game-area {
-    position: relative;
-}
+/* Game area */
 
-
-.card {
-    margin: 2px;
-    display: flex;
-    flex-wrap: wrap;
-}
-.card img {
-    width: 100%;
-    border-radius: 5%;
-}
 
 /* Footer */
 footer {
@@ -104,19 +92,12 @@ footer {
         font-size: x-large;
         gap: 50px;
     }
-    #game-area {
+    main {
         width:80vw;
-    }
-    .card-grid{
-        gap:10px;
     }
 }
 
 /* Media query: laptops and larger (1024px and up) */
 @media screen and (min-width: 1024px) {
-    .card-grid {
-        width: 80vw;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-    }
+    
 }
