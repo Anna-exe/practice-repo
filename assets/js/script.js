@@ -25,7 +25,7 @@ function musicControls() {
     
 }
 
-const cards = [
+const images = [
     {
         name: 'blonde angel',
         image: 'assets/images/blonde-angel.webp'
@@ -91,3 +91,13 @@ const cards = [
         image: 'assets/images/warrior.webp'
     }
 ];
+
+function loadCards(){
+    
+    const container = document.getElementById('container');
+    images.forEach(image => {
+        const img = document.createElement('img');
+        img.src = image;
+        container.appendChild(img);
+    })
+}
