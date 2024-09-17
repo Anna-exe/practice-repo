@@ -72,8 +72,13 @@ main {
 
 
 /* Game area */
+#container {
 
+}
 
+#container img {
+    border-radius: 5%;
+}
 /* Footer */
 footer {
     margin-bottom: 20px;
