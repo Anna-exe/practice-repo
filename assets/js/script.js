@@ -43,6 +43,7 @@ const cards = [
         'https://i.ibb.co/QnvC210/blonde-angel.webp',
         'https://i.ibb.co/NjcBtcx/dark-angel.webp'
 ];
+const blank = 'https://i.ibb.co/4K272ww/blank.webp'
 const container = document.getElementById('container');
 
 function loadCards(){
@@ -53,9 +54,20 @@ function loadCards(){
         frontGrid.append(card)
     });
 
-    let box = document.getElementById('back-grid');
-    for(let x = 0; x < 3; x++) {
-	let cln = box.cloneNode(true);
-	container.appendChild(cln)
-}
+    const backGrid = document.getElementById("back-grid");
+    let blank = document.createElement('img');
+    blank.src = 'https://i.ibb.co/4K272ww/blank.webp';
+    blank.alt = 'blank';
+    backGrid.append(blank);
+
+    /*let backGrid = document.getElementById('back-grid');
+    document.createElement('img');
+    blankCard.src = blank;
+    frontGrid.append(blankCard)
+
+
+    for(let x = 0; x < 16; x++) {
+	let cln = backGrid.cloneNode(true);
+	container.append(cln)*/
+
 }
