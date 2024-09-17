@@ -44,6 +44,8 @@ function loadCards(){
     cards.forEach(cards => {
         let frontCard = document.createElement('img');
         frontCard.src = cards;
+        frontCard.alt = 'front';
+        frontCard.classList = 'card front';
         frontGrid.append(frontCard)
     });
 
@@ -52,5 +54,6 @@ function loadCards(){
     let blank = document.createElement('img');
     blank.src = 'https://i.ibb.co/4K272ww/blank.webp';
     blank.alt = 'blank';
+    blank.classList = 'card back';
     backGrid.append(blank);
 }
