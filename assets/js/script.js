@@ -49,6 +49,8 @@ function loadCards(){
         frontGrid.append(frontCard)
     });
 
+    
+
     /* Display cards back */
     let backGrid = document.getElementById("back-grid");
     let blank = document.createElement('img');
@@ -58,9 +60,9 @@ function loadCards(){
     backGrid.append(blank);
 
     /* Clone back of the card */
-    const node = backGrid.firstChild;
+    const nodeBlank = backGrid.firstChild;
     for(i=0;i<15;i++){
-        const clone = node.cloneNode(false);
-        backGrid.appendChild(clone);
+        const cloneBlank = nodeBlank.cloneNode(false);
+        backGrid.appendChild(cloneBlank);
     }
 }
