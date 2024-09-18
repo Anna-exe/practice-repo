@@ -40,16 +40,19 @@ function loadCards(){
         'https://i.ibb.co/NjcBtcx/dark-angel.webp'
     ];
     /* Display cards front */
-    let frontGrid = document.getElementById('front-grid');
+    const frontGrid = document.getElementById('front-grid');
     cards.forEach(cards => {
-        let frontCard = document.createElement('img');
+        const frontCard = document.createElement('img');
         frontCard.src = cards;
         frontCard.alt = 'front';
         frontCard.classList = 'card front';
-        frontGrid.append(frontCard)
-    });
 
-    
+        /* Duplicate cards */
+        frontGrid.append(frontCard)
+        let nodeFront = frontCard;
+        let cloneFront = nodeFront.cloneNode(true);
+        frontGrid.appendChild(cloneFront);
+    });
 
     /* Display cards back */
     let backGrid = document.getElementById("back-grid");
@@ -60,9 +63,9 @@ function loadCards(){
     backGrid.append(blank);
 
     /* Clone back of the card */
-    const nodeBlank = backGrid.firstChild;
+    let nodeBlank = backGrid.firstChild;
     for(i=0;i<15;i++){
-        const cloneBlank = nodeBlank.cloneNode(false);
+        let cloneBlank = nodeBlank.cloneNode(false);
         backGrid.appendChild(cloneBlank);
     }
 }
