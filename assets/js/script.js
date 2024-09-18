@@ -3,9 +3,10 @@ window.onload = () => {
     musicControls();
     loadCards();
 }
-//
-//* Music controls
 
+/**
+ * Music controls
+ */
 function musicControls() {
     const backgroundMusic = document.getElementById('background-music');
     const playButton = document.getElementById('play-btn');
@@ -27,6 +28,9 @@ function musicControls() {
 
 var game = document.getElementById('game');
 
+/**
+ * Load cards
+ */
 function loadCards(){
     /* Cards front array*/
     let cards = [
