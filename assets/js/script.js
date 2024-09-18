@@ -50,6 +50,12 @@ function loadCards(){
         frontGrid.innerHTML += frontCard;
     });
 
+    const node = document.getElementById("myList2").lastChild;
+    const clone = node.cloneNode(true);
+    document.getElementById("myList1").appendChild(clone);
+
+
+
     /* Display cards back */
     /* Create div for cards */
     let backGrid = document.getElementById('back-grid');
