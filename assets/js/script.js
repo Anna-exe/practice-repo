@@ -51,11 +51,13 @@ function loadCards(){
     });
 
     /* Display cards back */
+    /* Create div for cards */
     let backGrid = document.getElementById('back-grid');
     let cardBack = document.createElement('div');
     cardBack.classList = 'card back';
     backGrid.append(cardBack);
 
+    /* Create image element */
     let blank = document.createElement('img');
     blank.src = 'https://i.ibb.co/4K272ww/blank.webp';
     blank.alt = 'blank';
