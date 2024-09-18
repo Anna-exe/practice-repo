@@ -106,9 +106,14 @@ main {
     transition: all .5s;
 }
 
-.card img:active{
+.card img:active {
     box-shadow: 0 0 5px 2px blueviolet;
     transition: all .5s;
+}
+
+/* Card flip */
+.card.flip{
+    transform: rotateY(180deg);
 }
 
 /* Footer */
