@@ -94,6 +94,9 @@ main {
     margin: 2px;
     display: flex;
     flex-wrap: wrap;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    transition: transform .5s;
 }
 .card img {
     width: 100%;
