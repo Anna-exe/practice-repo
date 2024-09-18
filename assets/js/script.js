@@ -27,7 +27,7 @@ function musicControls() {
 }
 
 var game = document.getElementById('game');
-    const frontGrid = document.getElementById('front-grid');
+const frontGrid = document.getElementById('front-grid');
 /**
  * Load cards
  */
@@ -69,4 +69,16 @@ function loadCards(){
         let cloneBlank = nodeBlank.cloneNode(true);
         backGrid.appendChild(cloneBlank);
     }
+
+    /* Flip cards */
+    
+    /**
+     * Flip cards
+     */
+    function flipCard(){
+        console.log('I was clicked!')
+        console.log(this);
+    }
+    let allCards = document.querySelectorAll('.card');
+    allCards.forEach(allCards=>allCards.addEventListener('click', flipCard))
 }
