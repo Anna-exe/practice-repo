@@ -67,11 +67,42 @@ main {
     /* Make main element take any surplus space to push footer down*/
     flex: 1 0 auto;
     margin-top: 20px;
-    width: 95vw;
 }
 
 
-/* Game area */
+/* Game grid area */
+#game {
+    position: relative;
+}
+/* Separate game grid to match amount of cards */
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+#front-grid {
+    margin: 30px 0;
+  }
+ 
+#back-grid {
+    position: absolute;
+    left:0;
+    top:0;
+}
+
+.card {
+    margin: 2px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.card img {
+    width: 100%;
+    border-radius: 5%;
+}
+
+.card img:active {
+    box-shadow: 0 0 5px 2px blueviolet;
+}
 
 /* Footer */
 footer {
@@ -91,12 +122,23 @@ footer {
         font-size: x-large;
         gap: 50px;
     }
-    main {
+    #game {
         width:80vw;
+    }
+    .card-grid{
+        gap:10px;
+    }
+
+    .card img:active {
+        box-shadow: 0 0 10px 3px blueviolet;
     }
 }
 
 /* Media query: laptops and larger (1024px and up) */
 @media screen and (min-width: 1024px) {
-    
+    .card-grid {
+        width: 80vw;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
 }
