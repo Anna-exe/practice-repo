@@ -52,16 +52,19 @@ function loadCards(){
 
     /* Display cards back */
     let backGrid = document.getElementById('back-grid');
+    let cardBack = document.createElement('div');
+    cardBack.classList = 'card back';
+    backGrid.append(cardBack);
+
     let blank = document.createElement('img');
     blank.src = 'https://i.ibb.co/4K272ww/blank.webp';
     blank.alt = 'blank';
-    blank.classList = 'card back';
-    backGrid.append(blank);
+    cardBack.append(blank);
 
     /* Clone back of the card */
     let nodeBlank = backGrid.firstChild;
     for(i=0;i<15;i++){
-        let cloneBlank = nodeBlank.cloneNode(false);
+        let cloneBlank = nodeBlank.cloneNode(true);
         backGrid.appendChild(cloneBlank);
     }
 }
