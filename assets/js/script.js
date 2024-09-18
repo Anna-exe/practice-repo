@@ -56,4 +56,11 @@ function loadCards(){
     blank.alt = 'blank';
     blank.classList = 'card back';
     backGrid.append(blank);
+
+    /* Clone back of the card */
+    const node = backGrid.firstChild;
+    for(i=0;i<15;i++){
+        const clone = node.cloneNode(false);
+        backGrid.appendChild(clone);
+    }
 }
