@@ -41,6 +41,14 @@ function loadCards(){
         {src: 'https://i.ibb.co/1z6nmgJ/ghost.webp', alt: 'ghost'},
         {src: 'https://i.ibb.co/cQR9PfW/druid.webp', alt: 'druid'},
         {src: 'https://i.ibb.co/QnvC210/blonde-angel.webp', alt: 'blonde angel'},
+        {src: 'https://i.ibb.co/NjcBtcx/dark-angel.webp', alt: 'dark angel'},
+        {src: 'https://i.ibb.co/YRRFR6v/warrior.webp', alt: 'warrior'},
+        {src: 'https://i.ibb.co/QkWbTqJ/silent-angel.webp', alt: 'silent angel'},
+        {src: 'https://i.ibb.co/0YX9b8d/sauron.webp', alt: 'sauron'},
+        {src: 'https://i.ibb.co/V01BQWN/goddess.webp', alt: 'goddess'},
+        {src: 'https://i.ibb.co/1z6nmgJ/ghost.webp', alt: 'ghost'},
+        {src: 'https://i.ibb.co/cQR9PfW/druid.webp', alt: 'druid'},
+        {src: 'https://i.ibb.co/QnvC210/blonde-angel.webp', alt: 'blonde angel'},
         {src: 'https://i.ibb.co/NjcBtcx/dark-angel.webp', alt: 'dark angel'}
     ];
 
@@ -49,12 +57,6 @@ function loadCards(){
         let frontCard = `<div class='card front'><img src='${cards.src}' alt='${cards.alt}'/></div>`;
         frontGrid.innerHTML += frontCard;
     });
-
-    const node = document.getElementById("myList2").lastChild;
-    const clone = node.cloneNode(true);
-    document.getElementById("myList1").appendChild(clone);
-
-
 
     /* Display cards back */
     /* Create div for cards */
