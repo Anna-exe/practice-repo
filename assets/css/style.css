@@ -74,6 +74,8 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+    transform-style: preserve-3d;
+    perspective: 500px;
 }
  
 /* Cards styling */
@@ -91,10 +93,6 @@ main {
     box-shadow: none;
 
 }
-.back img {
-    backface-visibility: hidden;
-}
-
 
 .card img:hover {
     box-shadow: 0 0 5px 2px blueviolet;
