@@ -32,7 +32,7 @@ const frontGrid = document.getElementById('front-grid');
  * Load cards
  */
 function loadCards(){
-    /* Cards front array*/
+    /* Cards front array */
     let cards = [
         {src: 'https://i.ibb.co/YRRFR6v/warrior.webp', alt: 'warrior'},
         {src: 'https://i.ibb.co/QkWbTqJ/silent-angel.webp', alt: 'silent angel'},
@@ -54,36 +54,8 @@ function loadCards(){
 
     /** Display cards front */
     cards.forEach(cards => {
-        let frontCard = `<div class='card front'><img src='${cards.src}' alt='${cards.alt}'/></div>`;
-        frontGrid.innerHTML += frontCard;
+        let frontCard = `<div class='card'><img src='${cards.src}' alt='${cards.alt}'/></div>`;
+        game.innerHTML += frontCard;
     });
 
-    /* Display cards back */
-    /* Create div for cards */
-    let backGrid = document.getElementById('back-grid');
-    let cardBack = document.createElement('div');
-    cardBack.classList = 'card back';
-    backGrid.append(cardBack);
-
-    /* Create image element */
-    let blank = document.createElement('img');
-    blank.src = 'https://i.ibb.co/4K272ww/blank.webp';
-    blank.alt = 'blank';
-    cardBack.append(blank);
-
-    /* Clone back of the card */
-    let nodeBlank = backGrid.firstChild;
-    for(i=0;i<15;i++){
-        let cloneBlank = nodeBlank.cloneNode(true);
-        backGrid.appendChild(cloneBlank);
-    }
-    
-    /**
-     * Flip cards
-     */
-    function flipCard(){
-        this.classList.toggle('flip');
-    }
-    let allCards = document.querySelectorAll('.card');
-    allCards.forEach(allCards=>allCards.addEventListener('click', flipCard))
 }

@@ -69,26 +69,13 @@ main {
     margin-top: 20px;
 }
 
-
-/* Game grid area */
-#game {
-    position: relative;
-}
 /* Separate game grid to match amount of cards */
-.card-grid {
+#game {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
 }
-#front-grid {
-    margin: 30px 0;
-  }
  
-#back-grid {
-    position: absolute;
-    left:0;
-    top:0;
-}
 /* Cards styling */
 .card {
     margin: 2px;
@@ -102,7 +89,12 @@ main {
     width: 100%;
     border-radius: 5%;
     box-shadow: none;
+
 }
+.back img {
+    backface-visibility: hidden;
+}
+
 
 .card img:hover {
     box-shadow: 0 0 5px 2px blueviolet;
@@ -112,11 +104,6 @@ main {
 .card img:active {
     box-shadow: 0 0 5px 2px blueviolet;
     transition: all .5s;
-}
-
-/* Card flip */
-.card.flip{
-    transform: rotateY(180deg);
 }
 
 /* Footer */
@@ -139,9 +126,7 @@ footer {
     }
     #game {
         width:80vw;
-    }
-    .card-grid{
-        gap:10px;
+        gap:10px
     }
 
     .card img:active {
@@ -151,7 +136,7 @@ footer {
 
 /* Media query: laptops and larger (1024px and up) */
 @media screen and (min-width: 1024px) {
-    .card-grid {
+    #game {
         width: 80vw;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
