@@ -98,6 +98,9 @@ main {
     transition: all .5s;
 }
 
+.card:active {
+    transform: scale(.97);
+}
 
 /* Footer */
 footer {

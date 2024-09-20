@@ -49,7 +49,7 @@ function loadCards(){
         {src: 'https://i.ibb.co/NjcBtcx/dark-angel.webp', alt: 'dark angel'}
     ];
     cards.sort(
-        /** shuffle */
+        /** Shuffle */
         function shuffle(){return 0.5 - Math.random()
         });
 
@@ -58,7 +58,17 @@ function loadCards(){
         function display(cards) {
             var cardDiv = `<div class='card'><img src='${cards.src}' alt='${cards.alt}'/></div>`;
             game.innerHTML += cardDiv;
-            console.log(cardDiv);
         });
-    
+
+        const cardBox = document.querySelectorAll('.card')
+        cardBox.forEach(
+            /** Click function */
+            function click(card) {
+            return card.addEventListener('click', flipCard);
+        });
+
+        function flipCard(){
+        console.log('click')
+        console.log(this);
+        }
 }
