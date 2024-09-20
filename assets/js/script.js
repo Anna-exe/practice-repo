@@ -27,12 +27,12 @@ function musicControls() {
 }
 
 var game = document.getElementById('game');
-const frontGrid = document.getElementById('front-grid');
+
 /**
  * Load cards
  */
 function loadCards(){
-    let cards = [
+    const cards = [
         {src: 'https://i.ibb.co/YRRFR6v/warrior.webp', alt: 'warrior'},
         {src: 'https://i.ibb.co/QkWbTqJ/silent-angel.webp', alt: 'silent angel'},
         {src: 'https://i.ibb.co/0YX9b8d/sauron.webp', alt: 'sauron'},
@@ -50,8 +50,11 @@ function loadCards(){
         {src: 'https://i.ibb.co/QnvC210/blonde-angel.webp', alt: 'blonde angel'},
         {src: 'https://i.ibb.co/NjcBtcx/dark-angel.webp', alt: 'dark angel'}
     ];
+    cards.sort(function(){return 0.5 - Math.random()});
     cards.forEach(cards => {
-        let frontCard = `<div class='card'><img src='${cards.src}' alt='${cards.alt}'/></div>`;
-        game.innerHTML += frontCard;
+        var cardDiv = `<div class='card'><img src='${cards.src}' alt='${cards.alt}'/></div>`;
+        game.innerHTML += cardDiv;
+        console.log(cardDiv);
     });
+    
 }
