@@ -61,25 +61,14 @@ function loadCards(){
         });
 
         const cardBox = document.querySelectorAll('.card')
-        cardBox.forEach(
-            /** Click event listener */
-            function click(card) {
-            return card.addEventListener('click', flipCard);
-        });
+        cardBox.onclick = function cardOpen(){
+            this.classList.add('cardOpen');
+            setTimeout(function () {
+                let cardOpen = document.querySelectorAll('.cardOpen');
+                let cardMatch = document.querySelectorAll('.cardMatch');
+                if(cardOpen[0].innerHTML == cardOpen[1].innerHTML[]){
 
-        var flippedCard = false;
-        var card1, card2;
-        /** Flip - toggle class */
-        function flipCard(){
-            this.classList.toggle('flip');
-            if (!flippedCard){
-                //first click
-                flippedCard = true;
-                card1 = this;
-            } else {
-                flippedCard = false;
-                card2 = this;
-                console.log({card1, card2})
-            }
+                }
+            })
         }
 }
