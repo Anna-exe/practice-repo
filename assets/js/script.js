@@ -68,7 +68,6 @@ function loadCards(){
         });
 
         function flipCard(){
-        console.log('click')
-        console.log(this);
+            this.classList.toggle('flip');
         }
 }
