@@ -102,6 +102,10 @@ main {
     transform: scale(.97);
 }
 
+.card.flip {
+    transform: rotateY(180deg);
+}
+
 /* Footer */
 footer {
     margin-bottom: 20px;
