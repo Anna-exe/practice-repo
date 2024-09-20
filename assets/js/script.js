@@ -67,8 +67,19 @@ function loadCards(){
             return card.addEventListener('click', flipCard);
         });
 
+        var flippedCard = false;
+        var card1, card2;
         /** Flip - toggle class */
         function flipCard(){
             this.classList.toggle('flip');
+            if (!flippedCard){
+                //first click
+                flippedCard = true;
+                card1 = this;
+            } else {
+                flippedCard = false;
+                card2 = this;
+                console.log({card1, card2})
+            }
         }
 }

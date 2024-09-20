@@ -106,6 +106,15 @@ main {
     transform: rotateY(180deg);
 }
 
+.card::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url('https://i.ibb.co/4K272ww/blank.webp');
+    background-size: 100%;
+    border-radius: 5%;
+}
+
 /* Footer */
 footer {
     margin-bottom: 20px;
@@ -129,7 +138,7 @@ footer {
         gap:10px
     }
 
-    .card img:active {
+    .card :active {
         box-shadow: 0 0 10px 3px blueviolet;
     }
 }
