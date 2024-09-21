@@ -62,8 +62,25 @@ function loadCards(){
         
         var card = document.querySelectorAll('.card');
         /** Flip on click */
+        card.forEach(card => card.addEventListener('click', openCard));
         function openCard(){
             this.classList.add('cardOpen');
+            setTimeout(function(){
+                if(document.querySelectorAll('.cardOpen').length > 1){
+                    if(document.querySelectorAll('.cardOpen')[0].innerHTML == document.querySelectorAll('.cardOpen')[1].innerHTML){
+                        document.querySelectorAll('.cardOpen')[0].classList.add('cardMatch')
+                        document.querySelectorAll('.cardOpen')[1].classList.add('cardMatch')
+    
+                        document.querySelectorAll('.cardOpen')[1].classList.remove('cardOpen')
+                        document.querySelectorAll('.cardOpen')[0].classList.remove('cardOpen')
+    
+                        if(document.querySelectorAll('.cardMatch').length == cards.length){
+                            alert('You matched all cards!')
+                        }
+                    } else {
+                        document.querySelectorAll('.cardOpen')[1].classList.remove('cardOpen')
+                    }   document.querySelectorAll('.cardOpen')[0].classList.remove('cardOpen')
+                }
+            },500)
         }
-        card.forEach(card => card.addEventListener('click', openCard));
 }
