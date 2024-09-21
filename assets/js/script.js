@@ -58,17 +58,11 @@ function loadCards(){
         function display(cards) {
             var cardDiv = `<div class='card'><img src='${cards.src}' alt='${cards.alt}'/></div>`;
             game.innerHTML += cardDiv;
+            var card = document.querySelectorAll('.card');
+            function flipCard(){
+                console.log(this)
+            }
+            card.forEach(card => card.addEventListener('click', flipCard));
         });
 
-        const cardBox = document.querySelectorAll('.card')
-        cardBox.onclick = function cardOpen(){
-            this.classList.add('cardOpen');
-            setTimeout(function () {
-                let cardOpen = document.querySelectorAll('.cardOpen');
-                let cardMatch = document.querySelectorAll('.cardMatch');
-                if(cardOpen[0].innerHTML == cardOpen[1].innerHTML[]){
-
-                }
-            })
-        }
 }
