@@ -8,6 +8,7 @@
     box-sizing: border-box;
     text-align: center;
 }
+
 /* Body */
 body {
     font-size: x-large;
@@ -25,26 +26,17 @@ body {
 header {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    margin-left: 10%;
+    margin: 0 5px;
     align-items: center;
     font-size: medium;
 }
 
+/* Logo */
 #logo {
     max-height: 70px;
     padding-right: 10px;
 }
 
-/* Music control */
-#music-div button {
-    background-color: transparent;
-    color: antiquewhite;
-    padding-left: 15px;
-    border-style: none;
-    font-size: x-large;
-    cursor: pointer;
-}
 /* Buttons */
 button {
     cursor: pointer;
@@ -54,7 +46,16 @@ button:hover {
     color:blueviolet !important;
 }
 
-/* Restart button styling */
+/* Music control buttons */
+#music-div button {
+    background-color: transparent;
+    color: antiquewhite;
+    padding-left: 15px;
+    border-style: none;
+    font-size: x-large;
+}
+
+/* Restart button */
 #restart-btn{
     border-radius: 20px;
     padding: 0 10px;
@@ -68,7 +69,6 @@ button:hover {
 main {
     /* Make main element take any surplus space to push footer down*/
     flex: 1 0 auto;
-    margin-top: 5%;
 }
 
 /* Separate game grid to match amount of cards */
@@ -78,19 +78,35 @@ main {
     grid-template-rows: 1fr 1fr 1fr 1fr;
     padding: 5% 0;
 }
- 
+
 /* Cards styling */
 .card {
     position: relative;
-    margin: 2px;
     display: flex;
     flex-wrap: wrap;
+    border-radius: 5%;
+    margin: 2px;
+    transition: transform .5s;
     perspective: 1000px;
     transform-style: preserve-3d;
     transition: transform .5s;
-    border-radius: 5%;
 }
 
+.card img {
+    border-radius: inherit;
+    width: 100%;
+}
+
+.card:active {
+    transform: scale(.97);
+}
+
+.card:hover {
+    box-shadow: 0 0 5px 2px blueviolet;
+    transition: all .5s;
+}
+
+/* Blank card */
 .card::after {
     content: '';
     position: absolute;
@@ -101,26 +117,13 @@ main {
     backface-visibility: hidden;
 }
 
+/* Card rotation */
 .cardOpen {
     transform: rotateY(180deg);
 }
 
 .cardMatch {
     transform: rotateY(180deg);
-}
-
-.card img {
-    border-radius: inherit;
-    width: 100%;
-}
-
-.card:hover {
-    box-shadow: 0 0 5px 2px blueviolet;
-    transition: all .5s;
-}
-
-.card:active {
-    transform: scale(.97);
 }
 
 /* Footer */
@@ -139,10 +142,6 @@ footer {
     #game {
         width:80vw;
         gap:10px
-    }
-
-    .card :active {
-        box-shadow: 0 0 10px 3px blueviolet;
     }
 }
 

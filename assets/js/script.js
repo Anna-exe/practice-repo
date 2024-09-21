@@ -73,24 +73,25 @@ function loadCards(){
             setTimeout(
                 /** Matching */
                 function matching(){
+                    let cardOpen = document.querySelectorAll('.cardOpen');
                 if(document.querySelectorAll('.cardOpen').length > 1){
                     // Check if two cards match
-                    if(document.querySelectorAll('.cardOpen')[0].innerHTML == document.querySelectorAll('.cardOpen')[1].innerHTML){
-                        document.querySelectorAll('.cardOpen')[0].classList.add('cardMatch')
-                        document.querySelectorAll('.cardOpen')[1].classList.add('cardMatch')
+                    if (cardOpen[0].innerHTML == cardOpen[1].innerHTML){
+                        cardOpen[0].classList.add('cardMatch')
+                        cardOpen[1].classList.add('cardMatch')
     
-                        document.querySelectorAll('.cardOpen')[1].classList.remove('cardOpen')
-                        document.querySelectorAll('.cardOpen')[0].classList.remove('cardOpen')
+                        cardOpen[1].classList.remove('cardOpen')
+                        cardOpen[0].classList.remove('cardOpen')
     
                         // Alert user if all cards are matched
                         if(document.querySelectorAll('.cardMatch').length == cards.length){
                             alert('You matched all cards!')
                         }
                     } else { // Close cards if not matched
-                        document.querySelectorAll('.cardOpen')[1].classList.remove('cardOpen')
-                        document.querySelectorAll('.cardOpen')[0].classList.remove('cardOpen')
+                        cardOpen[1].classList.remove('cardOpen')
+                        cardOpen[0].classList.remove('cardOpen')
                     }
                 }
-            },1000)
+            },500)
         }
 }
