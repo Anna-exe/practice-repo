@@ -100,6 +100,10 @@ main {
     backface-visibility: hidden;
 }
 
+.cardOpen {
+    transform: rotateY(180deg);
+}
+
 .card img {
     border-radius: inherit;
     width: 100%;
@@ -112,10 +116,6 @@ main {
 
 .card:active {
     transform: scale(.97);
-}
-
-.card.cardOpen {
-    transform: rotateY(180deg);
 }
 
 /* Footer */
