@@ -58,11 +58,12 @@ function loadCards(){
         function display(cards) {
             var cardDiv = `<div class='card'><img src='${cards.src}' alt='${cards.alt}'/></div>`;
             game.innerHTML += cardDiv;
-            var card = document.querySelectorAll('.card');
-            function flipCard(){
-                console.log(this)
-            }
-            card.forEach(card => card.addEventListener('click', flipCard));
         });
-
+        
+        var card = document.querySelectorAll('.card');
+        /** Flip on click */
+        function flipCard(){
+            this.classList.toggle('flip');
+        }
+        card.forEach(card => card.addEventListener('click', flipCard));
 }
