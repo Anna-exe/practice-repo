@@ -6,6 +6,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    text-align: center;
 }
 /* Body */
 body {
@@ -25,9 +26,9 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    font-size: medium;
-    margin-left: 20px;
+    margin-left: 10%;
     align-items: center;
+    font-size: medium;
 }
 
 #logo {
@@ -67,7 +68,7 @@ button:hover {
 main {
     /* Make main element take any surplus space to push footer down*/
     flex: 1 0 auto;
-    margin-top: 20px;
+    margin-top: 5%;
 }
 
 /* Separate game grid to match amount of cards */
@@ -75,7 +76,7 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    padding: 30px 0;
+    padding: 5% 0;
 }
  
 /* Cards styling */
@@ -101,10 +102,11 @@ main {
 }
 
 .cardOpen {
-    transform: rotateY(180deg) translateZ(1px);
+    transform: rotateY(180deg);
 }
-.cardMatch::after {
-    transform: rotateY(180deg) translateZ(1px);
+
+.cardMatch {
+    transform: rotateY(180deg);
 }
 
 .card img {
@@ -123,14 +125,8 @@ main {
 
 /* Footer */
 footer {
-    margin-bottom: 20px;
+    padding: 15px 0;
     font-size: medium;
-}
-
-#actions {
-    /* Spread elements around the div */
-    display: flex;
-    justify-content: space-around;
 }
 
 /* Media query: tablets and larger (768px and up) */
@@ -138,6 +134,7 @@ footer {
     header{
         font-size: x-large;
         gap: 50px;
+        padding-top: 10px;
     }
     #game {
         width:80vw;

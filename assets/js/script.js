@@ -25,7 +25,11 @@ function musicControls() {
     }
     
 }
-
+/** Reset game */
+function reset(){
+    game.innerHTML = '';
+    loadCards();
+}
 var game = document.getElementById('game');
 
 /** Load cards */
@@ -54,15 +58,15 @@ function loadCards(){
         });
 
     cards.forEach(
-        /** Display */
+        /** Display card images */
         function display(cards) {
             var cardDiv = `<div class='card'><img src='${cards.src}' alt='${cards.alt}'/></div>`;
             game.innerHTML += cardDiv;
         });
-        
+
         var card = document.querySelectorAll('.card');
-        /** Flip on click */
-        card.forEach(card => card.addEventListener('click', openCard));
+        /* Click event listener */
+        card.forEach((card) => card.addEventListener('click', openCard));
         function openCard(){
             this.classList.add('cardOpen');
             setTimeout(function(){
@@ -79,8 +83,9 @@ function loadCards(){
                         }
                     } else {
                         document.querySelectorAll('.cardOpen')[1].classList.remove('cardOpen')
-                    }   document.querySelectorAll('.cardOpen')[0].classList.remove('cardOpen')
+                        document.querySelectorAll('.cardOpen')[0].classList.remove('cardOpen')
+                    }
                 }
-            },500)
+            },1000)
         }
 }
