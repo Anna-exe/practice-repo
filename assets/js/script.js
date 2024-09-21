@@ -62,8 +62,8 @@ function loadCards(){
         
         var card = document.querySelectorAll('.card');
         /** Flip on click */
-        function flipCard(){
-            this.classList.toggle('flip');
+        function openCard(){
+            this.classList.add('cardOpen');
         }
-        card.forEach(card => card.addEventListener('click', flipCard));
+        card.forEach(card => card.addEventListener('click', openCard));
 }
