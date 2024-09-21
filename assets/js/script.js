@@ -4,9 +4,7 @@ window.onload = () => {
     loadCards();
 }
 
-/**
- * Music controls
- */
+/** Music controls */
 function musicControls() {
     const backgroundMusic = document.getElementById('background-music');
     const playButton = document.getElementById('play-btn');
@@ -23,17 +21,17 @@ function musicControls() {
             backgroundMusic.pause();
         });
     }
-    
 }
+
 /** Reset game */
 function reset(){
     game.innerHTML = '';
     loadCards();
 }
-var game = document.getElementById('game');
 
 /** Load cards */
 function loadCards(){
+    var game = document.getElementById('game');
     const cards = [
         {src: 'https://i.ibb.co/YRRFR6v/warrior.webp', alt: 'warrior'},
         {src: 'https://i.ibb.co/QkWbTqJ/silent-angel.webp', alt: 'silent angel'},
@@ -57,41 +55,44 @@ function loadCards(){
         function shuffle(){return 0.5 - Math.random()
         });
 
-    cards.forEach(
-        /** Display card images */
-        function display(cards) {
-            var cardDiv = `<div class='card'><img src='${cards.src}' alt='${cards.alt}'/></div>`;
-            game.innerHTML += cardDiv;
-        });
+        cards.forEach(
+            /** Display card images */
+            function display(cards) {
+                var cardDiv = `<div class='card'><img src='${cards.src}' alt='${cards.alt}'/></div>`;
+                game.innerHTML += cardDiv;
+            });
 
-        var card = document.querySelectorAll('.card');
-        /* Click event listener */
-        card.forEach((card) => card.addEventListener('click', openCard));
-        function openCard(){
-            this.classList.add('cardOpen');
+            var card = document.querySelectorAll('.card');
+            /* Click event listener */
+            card.forEach((card) => card.addEventListener('click', openCard));
             
-            setTimeout(
-                /** Matching */
-                function matching(){
-                    let cardOpen = document.querySelectorAll('.cardOpen');
-                if(document.querySelectorAll('.cardOpen').length > 1){
-                    // Check if two cards match
-                    if (cardOpen[0].innerHTML == cardOpen[1].innerHTML){
-                        cardOpen[0].classList.add('cardMatch')
-                        cardOpen[1].classList.add('cardMatch')
-    
-                        cardOpen[1].classList.remove('cardOpen')
-                        cardOpen[0].classList.remove('cardOpen')
-    
-                        // Alert user if all cards are matched
-                        if(document.querySelectorAll('.cardMatch').length == cards.length){
-                            alert('You matched all cards!')
+            /** Open card */
+            function openCard(){
+                this.classList.add('cardOpen');
+
+                setTimeout(
+                    /** Matching */
+                    function matching(){
+                        let cardOpen = document.querySelectorAll('.cardOpen');
+                    if(document.querySelectorAll('.cardOpen').length > 1){
+                        // Check if two cards match
+                        if (cardOpen[0].innerHTML == cardOpen[1].innerHTML){
+                            cardOpen[0].classList.add('cardMatch')
+                            cardOpen[1].classList.add('cardMatch')
+        
+                            cardOpen[1].classList.remove('cardOpen')
+                            cardOpen[0].classList.remove('cardOpen')
+        
+                            // Alert user if all cards are matched
+                            if(document.querySelectorAll('.cardMatch').length == cards.length){
+                                alert('You matched all cards!')
+                            }
+
+                        } else { // Close cards if not matched
+                            cardOpen[1].classList.remove('cardOpen')
+                            cardOpen[0].classList.remove('cardOpen')
                         }
-                    } else { // Close cards if not matched
-                        cardOpen[1].classList.remove('cardOpen')
-                        cardOpen[0].classList.remove('cardOpen')
                     }
-                }
-            },500)
+                },500)
+            }
         }
-}
