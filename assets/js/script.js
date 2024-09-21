@@ -53,7 +53,7 @@ function loadCards(){
         {src: 'https://i.ibb.co/NjcBtcx/dark-angel.webp', alt: 'dark angel'}
     ];
     cards.sort(
-        /** Shuffle */
+        /** Shuffle cards */
         function shuffle(){return 0.5 - Math.random()
         });
 
@@ -69,8 +69,12 @@ function loadCards(){
         card.forEach((card) => card.addEventListener('click', openCard));
         function openCard(){
             this.classList.add('cardOpen');
-            setTimeout(function(){
+            
+            setTimeout(
+                /** Matching */
+                function matching(){
                 if(document.querySelectorAll('.cardOpen').length > 1){
+                    // Check if two cards match
                     if(document.querySelectorAll('.cardOpen')[0].innerHTML == document.querySelectorAll('.cardOpen')[1].innerHTML){
                         document.querySelectorAll('.cardOpen')[0].classList.add('cardMatch')
                         document.querySelectorAll('.cardOpen')[1].classList.add('cardMatch')
@@ -78,10 +82,11 @@ function loadCards(){
                         document.querySelectorAll('.cardOpen')[1].classList.remove('cardOpen')
                         document.querySelectorAll('.cardOpen')[0].classList.remove('cardOpen')
     
+                        // Alert user if all cards are matched
                         if(document.querySelectorAll('.cardMatch').length == cards.length){
                             alert('You matched all cards!')
                         }
-                    } else {
+                    } else { // Close cards if not matched
                         document.querySelectorAll('.cardOpen')[1].classList.remove('cardOpen')
                         document.querySelectorAll('.cardOpen')[0].classList.remove('cardOpen')
                     }
